@@ -1,0 +1,6 @@
+framework module Pods_Triage {
+  umbrella header "Pods-Triage-umbrella.h"
+
+  export *
+  module * { export * }
+}

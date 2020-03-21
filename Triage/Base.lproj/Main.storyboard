@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wbm-Xo-eaX">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="hlA-87-qpa">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="fO6-xd-KZn" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="99B-xe-agm">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iXu-Ag-ApY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5041" y="-425"/>
+        </scene>
+        <!--HomeVC-->
+        <scene sceneID="nI8-va-8xi">
+            <objects>
+                <viewController id="wbm-Xo-eaX" customClass="HomeVC" customModule="Triage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mV5-BQ-jNw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkV-qC-K6s">
+                                <rect key="frame" x="34.999999999999993" y="79" width="127.33333333333331" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Destination Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YCE-rv-Etx">
+                                <rect key="frame" x="35" y="113" width="344" height="34"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="street-address"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="YCE-rv-Etx" firstAttribute="leading" secondItem="lkV-qC-K6s" secondAttribute="leading" id="DJG-km-eao"/>
+                            <constraint firstItem="gEx-cl-gMq" firstAttribute="trailing" secondItem="YCE-rv-Etx" secondAttribute="trailing" constant="35" id="Fd2-gC-p37"/>
+                            <constraint firstItem="lkV-qC-K6s" firstAttribute="leading" secondItem="gEx-cl-gMq" secondAttribute="leading" constant="35" id="FqQ-F0-68q"/>
+                            <constraint firstItem="YCE-rv-Etx" firstAttribute="top" secondItem="lkV-qC-K6s" secondAttribute="bottom" constant="10" id="G5R-lb-VRG"/>
+                            <constraint firstItem="lkV-qC-K6s" firstAttribute="top" secondItem="gEx-cl-gMq" secondAttribute="top" constant="35" id="Kkz-wL-axh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gEx-cl-gMq"/>
+                    </view>
+                    <connections>
+                        <outlet property="addressField" destination="YCE-rv-Etx" id="RA3-V9-zNj"/>
+                        <outlet property="addressInputLabel" destination="lkV-qC-K6s" id="SOC-IR-X71"/>
+                        <segue destination="1Jn-eD-tDI" kind="show" identifier="goToMapView" id="G3z-OO-oxC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zQI-bL-S7B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3930" y="-425"/>
+        </scene>
+        <!--Map RadiusVC-->
+        <scene sceneID="Jjh-eH-t8E">
+            <objects>
+                <viewController id="1Jn-eD-tDI" customClass="MapRadiusVC" customModule="Triage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eAE-rY-DN4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eOs-cF-05J">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="708"/>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HOB-vP-IEj">
+                                <rect key="frame" x="0.0" y="708" width="414" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="xYb-Vk-vk1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DBq-iW-fyM" firstAttribute="bottom" secondItem="HOB-vP-IEj" secondAttribute="bottom" id="5Ad-EH-DdX"/>
+                            <constraint firstItem="DBq-iW-fyM" firstAttribute="trailing" secondItem="eOs-cF-05J" secondAttribute="trailing" id="JKw-TY-BhZ"/>
+                            <constraint firstItem="eOs-cF-05J" firstAttribute="top" secondItem="DBq-iW-fyM" secondAttribute="top" id="NbM-H3-A2Q"/>
+                            <constraint firstItem="HOB-vP-IEj" firstAttribute="top" secondItem="eOs-cF-05J" secondAttribute="bottom" id="OpH-rT-d1c"/>
+                            <constraint firstItem="HOB-vP-IEj" firstAttribute="leading" secondItem="DBq-iW-fyM" secondAttribute="leading" id="UuY-Yf-R5f"/>
+                            <constraint firstItem="DBq-iW-fyM" firstAttribute="trailing" secondItem="HOB-vP-IEj" secondAttribute="trailing" id="oJI-EG-dru"/>
+                            <constraint firstItem="eOs-cF-05J" firstAttribute="leading" secondItem="DBq-iW-fyM" secondAttribute="leading" id="wkX-SK-Sii"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DBq-iW-fyM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RKi-5z-RZV"/>
+                    <connections>
+                        <outlet property="mapView" destination="eOs-cF-05J" id="b8j-aE-tJP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qgI-mp-ynX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3020" y="-425"/>
+        </scene>
+    </scenes>
+</document>
