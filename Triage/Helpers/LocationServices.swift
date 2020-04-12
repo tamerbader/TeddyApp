@@ -15,6 +15,14 @@ class LocationServices {
     
     /* Function to calculate the distance in miles between two points */
     
+    static func isWithinRange(source: CLLocation, destination: CLLocation, range: Double) -> Bool {
+        let distance: Double = findDistanceTo(source: source, destination: destination)
+        if (distance <= range) {
+            return true
+        }
+        return false
+    }
+    
     static func findDistanceTo(source: CLLocation, destination: CLLocation) -> Double {
         // Get CLLocation Distance from source to destination
         let distance: CLLocationDistance = source.distance(from: destination)
@@ -28,24 +36,26 @@ class LocationServices {
     }
     
     /* Method to convert a string input address to GPS Coordinate in form of CLLocation */
-    /*static func convertAddressToCoordinate(address: String, completionHandler: (CLLocation, Error)) {
-        var coordinates: [Double]  = []
-        
+    static func convertAddressToCoordinate(address: String, completionHandler: @escaping (CLLocation?, Error?) -> Void) {
         let geoCoder = CLGeocoder()
            geoCoder.geocodeAddressString(address) { (placemarks, error) in
-            if (error == nil)
-               guard
-                let placemarks = placemarks,
-                let location = placemarks.first?.location
-               else {
-                   // handle no location found
-                   return
-               }
+            if (error == nil) {
+                guard
+                 let placemarks = placemarks,
+                 let location = placemarks.first?.location
+                else {
+                    // handle no location found
+                    completionHandler(nil, error)
+                    return
+                }
+                completionHandler(location, nil)
+                
+            }
+               
             
         }
-        //return CLLocation(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
     }
-    */
+    
     
     
     

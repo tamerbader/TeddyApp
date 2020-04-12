@@ -12,8 +12,13 @@
 		0C3002CF233FBFAD0093B176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C3002CE233FBFAD0093B176 /* Assets.xcassets */; };
 		0C3002D2233FBFAD0093B176 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C3002D0233FBFAD0093B176 /* LaunchScreen.storyboard */; };
 		0C30F38C23EF0B7C00BC18BC /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C30F38B23EF0B7C00BC18BC /* HomeVC.swift */; };
-		0C30F38E23EF0CAB00BC18BC /* GPSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C30F38D23EF0CAB00BC18BC /* GPSService.swift */; };
 		0C430B78240C09310072F898 /* LocationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C430B77240C09310072F898 /* LocationServices.swift */; };
+		0C70A3EE24412C0A0046B8BB /* UserDefaults+CLLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C70A3ED24412C0A0046B8BB /* UserDefaults+CLLocation.swift */; };
+		0C70A3F024425B530046B8BB /* TrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C70A3EF24425B530046B8BB /* TrackingService.swift */; };
+		0C70A3F224425EDF0046B8BB /* LocationUpdateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C70A3F124425EDF0046B8BB /* LocationUpdateDelegate.swift */; };
+		0C70A3F4244266CF0046B8BB /* TimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C70A3F3244266CE0046B8BB /* TimerService.swift */; };
+		0C70A3F924439BD60046B8BB /* TrackingStatusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C70A3F824439BD60046B8BB /* TrackingStatusVC.swift */; };
+		0CACD87F24369488000B1ECC /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CACD87E24369488000B1ECC /* LocationService.swift */; };
 		0CC2BB7824140111001537FF /* MapRadiusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC2BB7724140111001537FF /* MapRadiusVC.swift */; };
 		0E250145916B5E7990B7DD51 /* Pods_Triage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B873711752BD73D28288CF1 /* Pods_Triage.framework */; };
 /* End PBXBuildFile section */
@@ -26,8 +31,13 @@
 		0C3002D1233FBFAD0093B176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C3002D3233FBFAD0093B176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C30F38B23EF0B7C00BC18BC /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		0C30F38D23EF0CAB00BC18BC /* GPSService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSService.swift; sourceTree = "<group>"; };
 		0C430B77240C09310072F898 /* LocationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServices.swift; sourceTree = "<group>"; };
+		0C70A3ED24412C0A0046B8BB /* UserDefaults+CLLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+CLLocation.swift"; sourceTree = "<group>"; };
+		0C70A3EF24425B530046B8BB /* TrackingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingService.swift; sourceTree = "<group>"; };
+		0C70A3F124425EDF0046B8BB /* LocationUpdateDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationUpdateDelegate.swift; sourceTree = "<group>"; };
+		0C70A3F3244266CE0046B8BB /* TimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerService.swift; sourceTree = "<group>"; };
+		0C70A3F824439BD60046B8BB /* TrackingStatusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingStatusVC.swift; sourceTree = "<group>"; };
+		0CACD87E24369488000B1ECC /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		0CC2BB7724140111001537FF /* MapRadiusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRadiusVC.swift; sourceTree = "<group>"; };
 		238A666B226F5CFB6E0BA36F /* Pods-Triage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Triage.release.xcconfig"; path = "Pods/Target Support Files/Pods-Triage/Pods-Triage.release.xcconfig"; sourceTree = "<group>"; };
 		6B873711752BD73D28288CF1 /* Pods_Triage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Triage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,17 +77,46 @@
 		0C3002C6233FBFAB0093B176 /* Triage */ = {
 			isa = PBXGroup;
 			children = (
+				0C70A3F7244397770046B8BB /* Controllers */,
+				0C70A3F6244396BE0046B8BB /* Helpers */,
+				0C70A3F5244396990046B8BB /* Services */,
 				0C3002C7233FBFAB0093B176 /* AppDelegate.swift */,
 				0C3002CB233FBFAB0093B176 /* Main.storyboard */,
 				0C3002CE233FBFAD0093B176 /* Assets.xcassets */,
 				0C3002D0233FBFAD0093B176 /* LaunchScreen.storyboard */,
 				0C3002D3233FBFAD0093B176 /* Info.plist */,
-				0C30F38B23EF0B7C00BC18BC /* HomeVC.swift */,
-				0C30F38D23EF0CAB00BC18BC /* GPSService.swift */,
-				0C430B77240C09310072F898 /* LocationServices.swift */,
-				0CC2BB7724140111001537FF /* MapRadiusVC.swift */,
 			);
 			path = Triage;
+			sourceTree = "<group>";
+		};
+		0C70A3F5244396990046B8BB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0C70A3EF24425B530046B8BB /* TrackingService.swift */,
+				0C70A3F3244266CE0046B8BB /* TimerService.swift */,
+				0CACD87E24369488000B1ECC /* LocationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0C70A3F6244396BE0046B8BB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0C70A3ED24412C0A0046B8BB /* UserDefaults+CLLocation.swift */,
+				0C430B77240C09310072F898 /* LocationServices.swift */,
+				0C70A3F124425EDF0046B8BB /* LocationUpdateDelegate.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0C70A3F7244397770046B8BB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0C30F38B23EF0B7C00BC18BC /* HomeVC.swift */,
+				0CC2BB7724140111001537FF /* MapRadiusVC.swift */,
+				0C70A3F824439BD60046B8BB /* TrackingStatusVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		6DA76037DAEFD3416CB0AB5C /* Frameworks */ = {
@@ -232,9 +271,14 @@
 			files = (
 				0C3002C8233FBFAB0093B176 /* AppDelegate.swift in Sources */,
 				0CC2BB7824140111001537FF /* MapRadiusVC.swift in Sources */,
+				0CACD87F24369488000B1ECC /* LocationService.swift in Sources */,
+				0C70A3F224425EDF0046B8BB /* LocationUpdateDelegate.swift in Sources */,
 				0C30F38C23EF0B7C00BC18BC /* HomeVC.swift in Sources */,
+				0C70A3F924439BD60046B8BB /* TrackingStatusVC.swift in Sources */,
+				0C70A3F024425B530046B8BB /* TrackingService.swift in Sources */,
+				0C70A3EE24412C0A0046B8BB /* UserDefaults+CLLocation.swift in Sources */,
 				0C430B78240C09310072F898 /* LocationServices.swift in Sources */,
-				0C30F38E23EF0CAB00BC18BC /* GPSService.swift in Sources */,
+				0C70A3F4244266CF0046B8BB /* TimerService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
