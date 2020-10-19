@@ -21,7 +21,7 @@ class TimerService {
     
     var minimumTime: Double = 0.25
     
-    
+    var child: Child!
 
     
     func isTimerRunning() -> Bool {
@@ -64,7 +64,7 @@ class TimerService {
         // This is just temporary for testing. Will remove later because ideally we want timer to continue going even when we reach minimuim
         if (metMinimumTimeAmount()) {
             print("Done with timer")
-            delegate?.timerDidMeetMinimumTimer()
+            delegate?.timerDidMeetMinimumTimer(child: child)
         }
     }
     
@@ -72,5 +72,5 @@ class TimerService {
 }
 
 protocol TimerUpdateDelegate {
-    func timerDidMeetMinimumTimer()
+    func timerDidMeetMinimumTimer(child: Child)
 }

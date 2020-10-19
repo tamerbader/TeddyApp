@@ -9,5 +9,6 @@ target 'Triage' do
 pod "BSImagePicker", "~> 2.8"
 pod 'GoogleMaps'
 pod 'GooglePlaces'
+pod 'BonsaiController'
 
 end

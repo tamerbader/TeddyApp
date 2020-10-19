@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -29,63 +29,62 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		01C13863CCB99BE668D8E29D9F23A9E3 /* CameraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D7C5A47852DA33D98D8CBA398F8D84 /* CameraCell.swift */; };
-		0305F05EEA700A01DBF470617208B86C /* AlbumTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFD99B9A33FAB22BA30BEDC7378AF2B /* AlbumTableViewDataSource.swift */; };
-		0345FCAA372A3518109B8D32DB01AA62 /* BSImageView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF597F4A4DC38A0C473F952B4C935E64 /* BSImageView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E3BDB0049BB081FDBE1212B638A4565 /* Pods-Triage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D258FC2D6C9A20A3F92F280E9DCDF9DA /* Pods-Triage-dummy.m */; };
-		2DA269B35639C34B5324CD0C940EFDBE /* CameraCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B786AF6586A98B2D90A9BEE1D73AC8 /* CameraCollectionViewDataSource.swift */; };
-		363ACC8EAE254F8681062EFD1CC23B34 /* arrow_down@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB5FB15563D570C3FF644EA0DCCA1216 /* arrow_down@1x.png */; };
-		3C809C01AB9C96FDE3E37B877EB38EA7 /* CameraCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0998869288EC1FD7C01FFE414B24FFF /* CameraCell.xib */; };
-		3EA58F38A3ED4293A75887F686E60BEB /* ImageViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2DF1E48578296E26B713B246A260BA /* ImageViewLayout.swift */; };
+		01C13863CCB99BE668D8E29D9F23A9E3 /* CameraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F778F460F172824EE2A711BD84D67A4B /* CameraCell.swift */; };
+		0305F05EEA700A01DBF470617208B86C /* AlbumTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550500AF82A5331BBD3867D19DE92C9A /* AlbumTableViewDataSource.swift */; };
+		0345FCAA372A3518109B8D32DB01AA62 /* BSImageView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7CEA091CDC8872D11AB0181DD615746 /* BSImageView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29DE6DB6FCCAB675EDB8C9967EEBB8E3 /* SlideInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BDF0A47DC0A536E1D30D7794C53BD5 /* SlideInTransition.swift */; };
+		2B45FFFCE88A59F7ACF622DEC1DA792F /* Pods-Triage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D258FC2D6C9A20A3F92F280E9DCDF9DA /* Pods-Triage-dummy.m */; };
+		2DA269B35639C34B5324CD0C940EFDBE /* CameraCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B6B0734974A2450CE18BE5C9384025 /* CameraCollectionViewDataSource.swift */; };
+		363ACC8EAE254F8681062EFD1CC23B34 /* arrow_down@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = E268C5E41CD592FA9573A5D725E80E53 /* arrow_down@1x.png */; };
+		3C809C01AB9C96FDE3E37B877EB38EA7 /* CameraCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A95B9D1BF21953072D2EC3A5BC5131D /* CameraCell.xib */; };
+		3EA58F38A3ED4293A75887F686E60BEB /* ImageViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB856AB11A76435C56952E48E29AC394 /* ImageViewLayout.swift */; };
 		3EB0F2C1535389CCE389A2D98D47F2A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28AE6C5594742F11BD12027BA412BDB7 /* UIKit.framework */; };
-		45B7C8291A6EE98C8728A0075F8E53BC /* BSGridCollectionViewLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67C5B25023EDD540CDB92FE621B88A6C /* BSGridCollectionViewLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4B6726CB859DB652DBFAB3D2C127C322 /* BSImagePickerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760D67A68502257B8B2547C90DB7837D /* BSImagePickerSettings.swift */; };
-		52417797A7CEEE127FD7F60CA727246E /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962565EC4EB8CB089F90D78089A13E56 /* AlbumsViewController.swift */; };
-		5C2EEBF404873F41DAE34B502C8432C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62395104D72FD9C7567919917161564E /* Foundation.framework */; };
-		5DE2462A93B4CA05B49D3C499994F544 /* add_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 81CE321B0297EA42E548130EFC763293 /* add_photo.png */; };
-		60B74BE0A21CA78718969CFF51014F6E /* arrow_down@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A443269B2E2C24055C0368F25CF8A1 /* arrow_down@3x.png */; };
-		6A754B834E0E2208A45A4256432B921B /* BSImagePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60EFA8BD2FB00026A4EE46D0449EA5AF /* BSImagePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		748C11DE9D8E52AB62CA8CD5C7AD9CD8 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997D821BD51B46826C69A4F553FF83CA /* PhotosViewController.swift */; };
+		45B7C8291A6EE98C8728A0075F8E53BC /* BSGridCollectionViewLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 265ADD659D037BD944AD3C0B82F5B615 /* BSGridCollectionViewLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B6726CB859DB652DBFAB3D2C127C322 /* BSImagePickerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0BAA091A6AC3BBE5E72C6A2663D896 /* BSImagePickerSettings.swift */; };
+		52417797A7CEEE127FD7F60CA727246E /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBD2345A7A205D5869DF8B490B12816 /* AlbumsViewController.swift */; };
+		5BDB8F4E75CC8413CBD27F3C07DA762B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62395104D72FD9C7567919917161564E /* Foundation.framework */; };
+		5DE2462A93B4CA05B49D3C499994F544 /* add_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = D5D34DA3022D1C59BB34D1FF43E97195 /* add_photo.png */; };
+		60B74BE0A21CA78718969CFF51014F6E /* arrow_down@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B694B0494E4EB2BD10D811FBA31619A /* arrow_down@3x.png */; };
+		6A754B834E0E2208A45A4256432B921B /* BSImagePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FE70C6F47642265762469D3C8CCD947 /* BSImagePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73392A164B1D8671E31CBC01DFE29B8E /* Pods-Triage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1171B0AAAE30543A8EA85DF8459366F0 /* Pods-Triage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		748C11DE9D8E52AB62CA8CD5C7AD9CD8 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE818EE655C521C12A7E04952AB6111F /* PhotosViewController.swift */; };
 		780CC2B7614379759D3E74E7E7A88479 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0AD6680C7A7F4A2B87CC573E104330 /* Photos.framework */; };
-		7DC555F1D7BFDCCBEAEA213ACAD3AC50 /* SelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E24681979BB75B841C4AEB5E023360 /* SelectionView.swift */; };
+		7DC555F1D7BFDCCBEAEA213ACAD3AC50 /* SelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95727902136077EDCFFCF5A752C814F5 /* SelectionView.swift */; };
+		7FF4F77DE1C0BF3E5197CA742DDFD6FA /* BonsaiController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5EA4B98D4036117B2121AE3827E4F9 /* BonsaiController-dummy.m */; };
 		876D5D44231F788F0E0DC8960C29D3F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62395104D72FD9C7567919917161564E /* Foundation.framework */; };
-		8C11EAAA5B546C90C8C9FCE232886041 /* BSImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC8968263300650D9CFD82CD7662D1 /* BSImageView.swift */; };
-		8DBBEBDD1FAD4CF091D8E1A624FC85CC /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F3F9DA0522D9D5DCBDD6367A55F8093 /* PhotoCell.xib */; };
-		917CE7ED2D6AD8E5556DAD719710732C /* PhotoCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EF737AA937847B8BD54FAC7DAF4192 /* PhotoCollectionViewDataSource.swift */; };
+		8C11EAAA5B546C90C8C9FCE232886041 /* BSImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E33CA550BEDEDE7AEBA4730DF251A31 /* BSImageView.swift */; };
+		8DBBEBDD1FAD4CF091D8E1A624FC85CC /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7EE03DF61ADE2AAD3C1CA754D4EAFD6 /* PhotoCell.xib */; };
+		917CE7ED2D6AD8E5556DAD719710732C /* PhotoCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E34B37DCA0A5A2C864E2895D8CFF1 /* PhotoCollectionViewDataSource.swift */; };
 		96DBE26C67EBC81A753EE59974B1D46E /* BSImageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64BFF06A6D19F43A9F21F06FB37B800 /* BSImageView.framework */; };
-		9B7DCD764CBC452AC9437CB39B74EB81 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65617845C119E66AF26329289F4E9217 /* Settings.swift */; };
-		9B8FC2DC0D1CACC97EC6A514B135CDD6 /* AlbumTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9235FD747457CA68F7125E7F71092D /* AlbumTitleView.swift */; };
-		9C8B3CFDD84DAEDA91EC7340207C1D8E /* ZoomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619AA5A5F6C1D193DE955CC197042253 /* ZoomAnimator.swift */; };
-		A043D77725B1419B35F853F4D7749C3F /* Pods-Triage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1171B0AAAE30543A8EA85DF8459366F0 /* Pods-Triage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A31983C5F3FB22CDAA2707E3245B9ECA /* ComposedCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D113E514F953A68CF6B1A03D63F2B0EB /* ComposedCollectionViewDataSource.swift */; };
-		A91F3450CEC4E2FEAD00AFF0A1F0E7B3 /* BSImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517D3A6A20F8247F72C30126D6082A6 /* BSImagePickerViewController.swift */; };
-		B552136EFE4A2CC1E4EE08A00F0F7331 /* GridCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B630E85829CA3AF38D280D7D5699048 /* GridCollectionViewLayout.swift */; };
+		9B7DCD764CBC452AC9437CB39B74EB81 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E153C7A2CCA3DC3A4E4033C73473DE4F /* Settings.swift */; };
+		9B8FC2DC0D1CACC97EC6A514B135CDD6 /* AlbumTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E68C28C64061F60E41C1CF69A4B8A08 /* AlbumTitleView.swift */; };
+		9C8B3CFDD84DAEDA91EC7340207C1D8E /* ZoomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095E94B9C9339490D47B583BECAC94DC /* ZoomAnimator.swift */; };
+		A31983C5F3FB22CDAA2707E3245B9ECA /* ComposedCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E4535F648EFA8B48699DE15FD587CD /* ComposedCollectionViewDataSource.swift */; };
+		A91F3450CEC4E2FEAD00AFF0A1F0E7B3 /* BSImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48B54D3B75C77745390CB7B7A14FFBD /* BSImagePickerViewController.swift */; };
+		B20A89DA00AC4D69E039FAB653CC96D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62395104D72FD9C7567919917161564E /* Foundation.framework */; };
+		B552136EFE4A2CC1E4EE08A00F0F7331 /* GridCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A986CFB78CB48521B3A06980FC584A08 /* GridCollectionViewLayout.swift */; };
 		B7460614D6E18381B42A179A54BEC05A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62395104D72FD9C7567919917161564E /* Foundation.framework */; };
-		B8FB5322FE43E00C6479C4DB796F8963 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CF19C590B68048BBAF40E3AB69C819 /* PreviewViewController.swift */; };
+		B8FB5322FE43E00C6479C4DB796F8963 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F835D42ADD079B33D922E4F5461FB7F /* PreviewViewController.swift */; };
 		B962E6C5A42CD62410163F76A5BED131 /* BSImagePicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5A0EEC8ACA4B2E5B39E21D0E018587C3 /* BSImagePicker.bundle */; };
 		B976860B4A1908A67ABB682CFD4A4539 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62395104D72FD9C7567919917161564E /* Foundation.framework */; };
-		BCADF5C83FFFC8A0F28A8D1493FB2013 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E1EC5C5D500235B2DB8B0FC0436170 /* PhotoCell.swift */; };
-		C613451438236D9CA18B5A78D88BB749 /* NSIndexSet+NSIndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27E7711C59BB5FDF9AF6FCF97C9C5E0 /* NSIndexSet+NSIndexPath.swift */; };
-		DCA9785F2BCECF84AF0A60DF02625155 /* UIViewController+BSImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E04887824E935FE030176FC6A9AEE /* UIViewController+BSImagePicker.swift */; };
-		E0E79903E840B4F2E4996CD294619593 /* arrow_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76376A3B7A517E0A58B49DC6F91D759F /* arrow_down@2x.png */; };
+		BCADF5C83FFFC8A0F28A8D1493FB2013 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F684C37950EEE3A37CBC6207400FDB54 /* PhotoCell.swift */; };
+		C613451438236D9CA18B5A78D88BB749 /* NSIndexSet+NSIndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7958B0ACA56CC834BE1CD027AA82CCE8 /* NSIndexSet+NSIndexPath.swift */; };
+		CB75C8E096148DC8CC2BDCE4662A0F68 /* BonsaiController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2997076D30C3E6B05940FC6627AF70E /* BonsaiController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC0A43BF131B4A6C3A3C53F34CB2444E /* BonsaiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3612601358C910D4FF37376019232D27 /* BonsaiController.swift */; };
+		DCA9785F2BCECF84AF0A60DF02625155 /* UIViewController+BSImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E73DD28477341EC95A09608D68112D /* UIViewController+BSImagePicker.swift */; };
+		E0E79903E840B4F2E4996CD294619593 /* arrow_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2326327670DC9CD6D380C6BAF6E9FA44 /* arrow_down@2x.png */; };
 		E22FEF3B38E0A5CEE578CB8EB19377C1 /* BSGridCollectionViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B2AF3C0F12510527DF46E442D741B4 /* BSGridCollectionViewLayout.framework */; };
-		EB6920BB9159885921756EF1E9C17F60 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF7BE37B3E44B9611A81EDFA8A0357D /* AlbumCell.swift */; };
-		ED25CCFFF8DE35DC6EBD9561DA78AD41 /* Albums.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7FB70C15FE7764F1ADE79E9D1DBE57D /* Albums.storyboard */; };
-		F49E34D57D6A477830D6522370720C38 /* BSGridCollectionViewLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD829A25819CF0A4CB1485A3FD4D25F /* BSGridCollectionViewLayout-dummy.m */; };
-		F81BFF71B1910D15E7F714FC7253A990 /* add_photo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A6033F4DDE56FD2ED28C449C69A0ADF /* add_photo@3x.png */; };
-		FA947D771F7EA95F7C7F43A65BCA32FA /* BSImageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBDFA21ECB35F85E32956638DFB3C6C /* BSImageView-dummy.m */; };
-		FDC4B3A71644BAC1E52F697921D88C95 /* add_photo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4832E7C9236FDBFFB5F52DB80E91802B /* add_photo@2x.png */; };
-		FE69DF2BD2BB9B1F8B51A27E4B70B172 /* BSImagePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D0E4D088A873613DE7C885D9E06FCD /* BSImagePicker-dummy.m */; };
+		EA7C4E583BAD402C4D04F87AF5C6F2FB /* BubbleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A889AD891360E87C69A0C8114B361 /* BubbleTransition.swift */; };
+		EB6920BB9159885921756EF1E9C17F60 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63B57438F392FB63A9F953BF9D80E3A /* AlbumCell.swift */; };
+		ED25CCFFF8DE35DC6EBD9561DA78AD41 /* Albums.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 997DFE99DB9BF6DFCDFB147C04D8B8B5 /* Albums.storyboard */; };
+		F49E34D57D6A477830D6522370720C38 /* BSGridCollectionViewLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B29E55FEC21461D639876E5289BE875C /* BSGridCollectionViewLayout-dummy.m */; };
+		F81BFF71B1910D15E7F714FC7253A990 /* add_photo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E51782A654111915844EE1BE419F31DA /* add_photo@3x.png */; };
+		FA947D771F7EA95F7C7F43A65BCA32FA /* BSImageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1530454215CB4CFFA06CCD4525970C /* BSImageView-dummy.m */; };
+		FDC4B3A71644BAC1E52F697921D88C95 /* add_photo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F332EB294714CC4A1CA17AAC5E10D1D4 /* add_photo@2x.png */; };
+		FE69DF2BD2BB9B1F8B51A27E4B70B172 /* BSImagePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B98A0FC3BDF5C4A968183795412B59 /* BSImagePicker-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		355C32665E2BF593AF04877BA7B6BBC4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
-			remoteInfo = GoogleMaps;
-		};
 		376DD3A381F2F328923567DDDBC3439D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -93,19 +92,19 @@
 			remoteGlobalIDString = 7F03C7C8BA59A32177B1216C274F4369;
 			remoteInfo = "BSImagePicker-BSImagePicker";
 		};
+		51FFC29FD7434D2F8773BD6612B51209 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FC272E5264771C98573AEA8FB92240D;
+			remoteInfo = BonsaiController;
+		};
 		53D087D171DC0B311F3E16AF0E0FA85C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 434AF40538EB4723A91D166A06871292;
 			remoteInfo = BSGridCollectionViewLayout;
-		};
-		6B9415E501154CEA844009AE8141EE58 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4205A641CA6A7B8F19FBBC43B3EC5CC4;
-			remoteInfo = BSImageView;
 		};
 		6DC35CBF481851E8EB4387B674AB77F4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -121,116 +120,149 @@
 			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
 			remoteInfo = GoogleMaps;
 		};
-		7033A8FFDB7CA69AB699254535618349 /* PBXContainerItemProxy */ = {
+		9117FE46C55BC98C74D4740BAFE97521 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+		A4DA9292BD2B1FC79B499D2140C0F1FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 434AF40538EB4723A91D166A06871292;
 			remoteInfo = BSGridCollectionViewLayout;
 		};
-		8E042BBC26C502883C787414C8725BAE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 377E69F20375EB612410D6BD87B4AF98;
-			remoteInfo = BSImagePicker;
-		};
-		ABB1B64419EBAFC770A8CA75C9588695 /* PBXContainerItemProxy */ = {
+		BC44C5F9F32CEF4D4AC00FE6B525B4DF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0C1885900810601510E0C632060FAF26;
 			remoteInfo = GooglePlaces;
 		};
+		DDCB4E24953C180FC26E2BA91E93F94C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 377E69F20375EB612410D6BD87B4AF98;
+			remoteInfo = BSImagePicker;
+		};
+		F4E623919C6DEA7BE1E9D497067C0BB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4205A641CA6A7B8F19FBBC43B3EC5CC4;
+			remoteInfo = BSImageView;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0185D6DC1659B87B9D7BDFF8D0CF5D1F /* BSImageView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BSImageView.modulemap; sourceTree = "<group>"; };
-		06D7C5A47852DA33D98D8CBA398F8D84 /* CameraCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraCell.swift; path = Source/View/CameraCell.swift; sourceTree = "<group>"; };
-		0757FD79297208C9367BD5649571F226 /* GooglePlaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooglePlaces.release.xcconfig; sourceTree = "<group>"; };
-		0B2DF1E48578296E26B713B246A260BA /* ImageViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageViewLayout.swift; path = Source/ImageViewLayout.swift; sourceTree = "<group>"; };
-		0B630E85829CA3AF38D280D7D5699048 /* GridCollectionViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GridCollectionViewLayout.swift; path = Pod/Classes/GridCollectionViewLayout.swift; sourceTree = "<group>"; };
-		0D0F701DFCD2AEAA922220E83CB647FA /* BSImageView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BSImageView-Info.plist"; sourceTree = "<group>"; };
-		10CF19C590B68048BBAF40E3AB69C819 /* PreviewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PreviewViewController.swift; path = Source/Controller/PreviewViewController.swift; sourceTree = "<group>"; };
+		0303E27DFE6986F633877312A1C943CD /* GoogleMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.debug.xcconfig; sourceTree = "<group>"; };
+		07A82F5A37E6B7DA124185B3062AED66 /* BonsaiController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BonsaiController.modulemap; sourceTree = "<group>"; };
+		095E94B9C9339490D47B583BECAC94DC /* ZoomAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZoomAnimator.swift; path = Source/Controller/ZoomAnimator.swift; sourceTree = "<group>"; };
+		0CE2C1CAF9AD130EC905F74A07649529 /* BSGridCollectionViewLayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BSGridCollectionViewLayout-Info.plist"; sourceTree = "<group>"; };
+		0D5EA4B98D4036117B2121AE3827E4F9 /* BonsaiController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BonsaiController-dummy.m"; sourceTree = "<group>"; };
 		1171B0AAAE30543A8EA85DF8459366F0 /* Pods-Triage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Triage-umbrella.h"; sourceTree = "<group>"; };
-		16D4C77F697FC28B1955F3F05BA71A33 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
-		1A1E04887824E935FE030176FC6A9AEE /* UIViewController+BSImagePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+BSImagePicker.swift"; path = "Source/Extension/UIViewController+BSImagePicker.swift"; sourceTree = "<group>"; };
-		1ACAEE3BA0D0405D0089D2A491B94228 /* BSGridCollectionViewLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BSGridCollectionViewLayout.debug.xcconfig; sourceTree = "<group>"; };
-		1ECC8968263300650D9CFD82CD7662D1 /* BSImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BSImageView.swift; path = Source/BSImageView.swift; sourceTree = "<group>"; };
+		12D7CD8E8690AA71353705F9AE657464 /* BSImageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSImageView-prefix.pch"; sourceTree = "<group>"; };
+		180BA6691C775B1E2C47AC186858C9AA /* BSImagePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSImagePicker-prefix.pch"; sourceTree = "<group>"; };
 		1F08AE4B81A4E4ECE65672A185E38F78 /* BSImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BSImagePicker.framework; path = BSImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		20170E2D397EC39FABAA807B9EA720F8 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
-		223C1E0A1E45EAB79EE0926F9EE07AC0 /* BSImageView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BSImageView.debug.xcconfig; sourceTree = "<group>"; };
-		24BB4FB7BD5144E9C925493F4EF90A33 /* BSImagePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSImagePicker-prefix.pch"; sourceTree = "<group>"; };
+		201EFCA1C33748B28001EEBA797ED62C /* BonsaiController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BonsaiController.release.xcconfig; sourceTree = "<group>"; };
+		2326327670DC9CD6D380C6BAF6E9FA44 /* arrow_down@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "arrow_down@2x.png"; path = "Assets/arrow_down@2x.png"; sourceTree = "<group>"; };
 		25093D3B03BDA71257913C3FC8C8A30D /* BSImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BSImageView.framework; path = BSImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		265ADD659D037BD944AD3C0B82F5B615 /* BSGridCollectionViewLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSGridCollectionViewLayout-umbrella.h"; sourceTree = "<group>"; };
+		27B91A616D3E3D080255C6C93A591F62 /* BonsaiController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BonsaiController.framework; path = BonsaiController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28AE6C5594742F11BD12027BA412BDB7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		2B3786122E797F70ED6FA8BDEBB13353 /* GoogleMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.debug.xcconfig; sourceTree = "<group>"; };
-		3517D3A6A20F8247F72C30126D6082A6 /* BSImagePickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BSImagePickerViewController.swift; path = Source/Controller/BSImagePickerViewController.swift; sourceTree = "<group>"; };
-		43A443269B2E2C24055C0368F25CF8A1 /* arrow_down@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "arrow_down@3x.png"; path = "Assets/arrow_down@3x.png"; sourceTree = "<group>"; };
-		45E722461181566B0DCD1E728CB06790 /* BSImagePicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BSImagePicker.release.xcconfig; sourceTree = "<group>"; };
-		4809B7AA1CE1D85AF70245A13070E304 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
-		4832E7C9236FDBFFB5F52DB80E91802B /* add_photo@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "add_photo@2x.png"; path = "Assets/add_photo@2x.png"; sourceTree = "<group>"; };
+		2C6D020EACE03B0B41CA77CF448BD3E5 /* BonsaiController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BonsaiController-Info.plist"; sourceTree = "<group>"; };
+		317E923F4D93B5D36252609561CE7442 /* BSGridCollectionViewLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BSGridCollectionViewLayout.debug.xcconfig; sourceTree = "<group>"; };
+		34412F0660DA7F80831E0C87AB5016B2 /* BSGridCollectionViewLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BSGridCollectionViewLayout.modulemap; sourceTree = "<group>"; };
+		34BDF0A47DC0A536E1D30D7794C53BD5 /* SlideInTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlideInTransition.swift; path = BonsaiController/Classes/SlideInTransition.swift; sourceTree = "<group>"; };
+		3612601358C910D4FF37376019232D27 /* BonsaiController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BonsaiController.swift; path = BonsaiController/Classes/BonsaiController.swift; sourceTree = "<group>"; };
+		3D4CF44587EDFF0FB20AB0A7F67711CA /* BSGridCollectionViewLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSGridCollectionViewLayout-prefix.pch"; sourceTree = "<group>"; };
 		4B0AD6680C7A7F4A2B87CC573E104330 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
-		4F3F9DA0522D9D5DCBDD6367A55F8093 /* PhotoCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = PhotoCell.xib; path = Assets/PhotoCell.xib; sourceTree = "<group>"; };
-		521A63C89B9ED2E16EAC2596F14A3496 /* GoogleMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.release.xcconfig; sourceTree = "<group>"; };
-		5392E9E0AD0EF66D5C75DE7A602EF476 /* BSGridCollectionViewLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BSGridCollectionViewLayout.modulemap; sourceTree = "<group>"; };
+		4B0BAA091A6AC3BBE5E72C6A2663D896 /* BSImagePickerSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BSImagePickerSettings.swift; path = Source/Protocol/BSImagePickerSettings.swift; sourceTree = "<group>"; };
+		4E33CA550BEDEDE7AEBA4730DF251A31 /* BSImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BSImageView.swift; path = Source/BSImageView.swift; sourceTree = "<group>"; };
+		4FE70C6F47642265762469D3C8CCD947 /* BSImagePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSImagePicker-umbrella.h"; sourceTree = "<group>"; };
+		550500AF82A5331BBD3867D19DE92C9A /* AlbumTableViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumTableViewDataSource.swift; path = Source/Model/AlbumTableViewDataSource.swift; sourceTree = "<group>"; };
 		58B2AF3C0F12510527DF46E442D741B4 /* BSGridCollectionViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BSGridCollectionViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0EEC8ACA4B2E5B39E21D0E018587C3 /* BSImagePicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = BSImagePicker.bundle; path = "BSImagePicker-BSImagePicker.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB70C624E37F9997F7A7245073C9A3C /* BSGridCollectionViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BSGridCollectionViewLayout.framework; path = BSGridCollectionViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		60EFA8BD2FB00026A4EE46D0449EA5AF /* BSImagePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSImagePicker-umbrella.h"; sourceTree = "<group>"; };
-		619AA5A5F6C1D193DE955CC197042253 /* ZoomAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZoomAnimator.swift; path = Source/Controller/ZoomAnimator.swift; sourceTree = "<group>"; };
+		5DF303CFC9695BFE7B3A66E15955637C /* BSImagePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BSImagePicker-Info.plist"; sourceTree = "<group>"; };
 		62395104D72FD9C7567919917161564E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		63E24681979BB75B841C4AEB5E023360 /* SelectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectionView.swift; path = Source/View/SelectionView.swift; sourceTree = "<group>"; };
-		655D36238183F59FADD0E6CC4003D005 /* BSImagePicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BSImagePicker.debug.xcconfig; sourceTree = "<group>"; };
-		65617845C119E66AF26329289F4E9217 /* Settings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Settings.swift; path = Source/Model/Settings.swift; sourceTree = "<group>"; };
-		67B786AF6586A98B2D90A9BEE1D73AC8 /* CameraCollectionViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraCollectionViewDataSource.swift; path = Source/Model/CameraCollectionViewDataSource.swift; sourceTree = "<group>"; };
-		67C5B25023EDD540CDB92FE621B88A6C /* BSGridCollectionViewLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSGridCollectionViewLayout-umbrella.h"; sourceTree = "<group>"; };
-		6CD829A25819CF0A4CB1485A3FD4D25F /* BSGridCollectionViewLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BSGridCollectionViewLayout-dummy.m"; sourceTree = "<group>"; };
-		6D9235FD747457CA68F7125E7F71092D /* AlbumTitleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumTitleView.swift; path = Source/View/AlbumTitleView.swift; sourceTree = "<group>"; };
+		645CBB5B9CE078646EFEC915BD4F688C /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		66B6B0734974A2450CE18BE5C9384025 /* CameraCollectionViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraCollectionViewDataSource.swift; path = Source/Model/CameraCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		6A95B9D1BF21953072D2EC3A5BC5131D /* CameraCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CameraCell.xib; path = Assets/CameraCell.xib; sourceTree = "<group>"; };
+		6E68C28C64061F60E41C1CF69A4B8A08 /* AlbumTitleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumTitleView.swift; path = Source/View/AlbumTitleView.swift; sourceTree = "<group>"; };
 		70F8818877EEA05494F134F04711A206 /* Pods-Triage-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Triage-acknowledgements.plist"; sourceTree = "<group>"; };
-		73961F563EF9B892CBE0693DD8303BA2 /* BSGridCollectionViewLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSGridCollectionViewLayout-prefix.pch"; sourceTree = "<group>"; };
-		73EF737AA937847B8BD54FAC7DAF4192 /* PhotoCollectionViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoCollectionViewDataSource.swift; path = Source/Model/PhotoCollectionViewDataSource.swift; sourceTree = "<group>"; };
-		75C4347414B211C8BA5602BF22B5F0F5 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
-		760D67A68502257B8B2547C90DB7837D /* BSImagePickerSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BSImagePickerSettings.swift; path = Source/Protocol/BSImagePickerSettings.swift; sourceTree = "<group>"; };
-		76376A3B7A517E0A58B49DC6F91D759F /* arrow_down@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "arrow_down@2x.png"; path = "Assets/arrow_down@2x.png"; sourceTree = "<group>"; };
-		7A6033F4DDE56FD2ED28C449C69A0ADF /* add_photo@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "add_photo@3x.png"; path = "Assets/add_photo@3x.png"; sourceTree = "<group>"; };
-		80265A27B1B3A87989F63F9656892C21 /* BSImagePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BSImagePicker-Info.plist"; sourceTree = "<group>"; };
-		81CE321B0297EA42E548130EFC763293 /* add_photo.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = add_photo.png; path = Assets/add_photo.png; sourceTree = "<group>"; };
-		81D611C5B0DCA9C31421221C14D89B37 /* GooglePlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooglePlaces.debug.xcconfig; sourceTree = "<group>"; };
+		7958B0ACA56CC834BE1CD027AA82CCE8 /* NSIndexSet+NSIndexPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSIndexSet+NSIndexPath.swift"; path = "Source/Extension/NSIndexSet+NSIndexPath.swift"; sourceTree = "<group>"; };
+		79B98A0FC3BDF5C4A968183795412B59 /* BSImagePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BSImagePicker-dummy.m"; sourceTree = "<group>"; };
+		7ABF53788C3A858BA1825AB0B29311C1 /* BSImagePicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BSImagePicker.release.xcconfig; sourceTree = "<group>"; };
+		845E19A377077833EF5755422092EB10 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
 		86DB72A175057B9B8EF9547FCB8C39A0 /* Pods-Triage-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Triage-resources.sh"; sourceTree = "<group>"; };
-		8C7748F38B692827D75CE4777FC2336F /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
-		962565EC4EB8CB089F90D78089A13E56 /* AlbumsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumsViewController.swift; path = Source/Controller/AlbumsViewController.swift; sourceTree = "<group>"; };
-		987D57548C9E816816CB56CA1BBD3051 /* BSGridCollectionViewLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BSGridCollectionViewLayout.release.xcconfig; sourceTree = "<group>"; };
-		997D821BD51B46826C69A4F553FF83CA /* PhotosViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotosViewController.swift; path = Source/Controller/PhotosViewController.swift; sourceTree = "<group>"; };
+		8DBD2345A7A205D5869DF8B490B12816 /* AlbumsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumsViewController.swift; path = Source/Controller/AlbumsViewController.swift; sourceTree = "<group>"; };
+		94F1DF7184988BC42DA8DE087924401F /* BSGridCollectionViewLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BSGridCollectionViewLayout.release.xcconfig; sourceTree = "<group>"; };
+		95727902136077EDCFFCF5A752C814F5 /* SelectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectionView.swift; path = Source/View/SelectionView.swift; sourceTree = "<group>"; };
+		997DFE99DB9BF6DFCDFB147C04D8B8B5 /* Albums.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Albums.storyboard; path = Assets/Albums.storyboard; sourceTree = "<group>"; };
+		99C7593F02654AEF507AA6A6199DA7E0 /* BSImageView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BSImageView.modulemap; sourceTree = "<group>"; };
+		9B694B0494E4EB2BD10D811FBA31619A /* arrow_down@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "arrow_down@3x.png"; path = "Assets/arrow_down@3x.png"; sourceTree = "<group>"; };
+		9C5A889AD891360E87C69A0C8114B361 /* BubbleTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BubbleTransition.swift; path = BonsaiController/Classes/BubbleTransition.swift; sourceTree = "<group>"; };
+		9CB622F726AFEC0FAD3A6F8D595C3FCF /* GooglePlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooglePlaces.debug.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A0998869288EC1FD7C01FFE414B24FFF /* CameraCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CameraCell.xib; path = Assets/CameraCell.xib; sourceTree = "<group>"; };
+		9E3B58C55B018BFB6E2A3D9A1067F444 /* BSImagePicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BSImagePicker.debug.xcconfig; sourceTree = "<group>"; };
+		9F835D42ADD079B33D922E4F5461FB7F /* PreviewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PreviewViewController.swift; path = Source/Controller/PreviewViewController.swift; sourceTree = "<group>"; };
+		A0F5B50CFF9FD910A21860A12E11648D /* BonsaiController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BonsaiController-prefix.pch"; sourceTree = "<group>"; };
+		A3E4535F648EFA8B48699DE15FD587CD /* ComposedCollectionViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ComposedCollectionViewDataSource.swift; path = Source/Model/ComposedCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		A64BFF06A6D19F43A9F21F06FB37B800 /* BSImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BSImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A2DEAAC4C04F4C54E589CD0E3D93A9 /* Pods-Triage-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Triage-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A6E1EC5C5D500235B2DB8B0FC0436170 /* PhotoCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoCell.swift; path = Source/View/PhotoCell.swift; sourceTree = "<group>"; };
 		A86024959725F5332E4F394DF6234678 /* Pods-Triage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Triage-Info.plist"; sourceTree = "<group>"; };
+		A986CFB78CB48521B3A06980FC584A08 /* GridCollectionViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GridCollectionViewLayout.swift; path = Pod/Classes/GridCollectionViewLayout.swift; sourceTree = "<group>"; };
+		AB1530454215CB4CFFA06CCD4525970C /* BSImageView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BSImageView-dummy.m"; sourceTree = "<group>"; };
+		AB856AB11A76435C56952E48E29AC394 /* ImageViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageViewLayout.swift; path = Source/ImageViewLayout.swift; sourceTree = "<group>"; };
 		ABB998B6285F3FC9DDEB3D6E7ECBF6CB /* Pods-Triage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Triage.debug.xcconfig"; sourceTree = "<group>"; };
-		B065981AB628C214F1E8A799638F6C68 /* ResourceBundle-BSImagePicker-BSImagePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-BSImagePicker-BSImagePicker-Info.plist"; sourceTree = "<group>"; };
-		B27E7711C59BB5FDF9AF6FCF97C9C5E0 /* NSIndexSet+NSIndexPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSIndexSet+NSIndexPath.swift"; path = "Source/Extension/NSIndexSet+NSIndexPath.swift"; sourceTree = "<group>"; };
-		B67668CBCCA20B42EB7976240BF4DF9E /* BSGridCollectionViewLayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BSGridCollectionViewLayout-Info.plist"; sourceTree = "<group>"; };
-		B7FB70C15FE7764F1ADE79E9D1DBE57D /* Albums.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Albums.storyboard; path = Assets/Albums.storyboard; sourceTree = "<group>"; };
+		ACA6D76B10282ED8079712EE04DD4AD4 /* BSImagePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BSImagePicker.modulemap; sourceTree = "<group>"; };
+		ADFF3E6DED2FA422596821464D3845A3 /* BSImageView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BSImageView-Info.plist"; sourceTree = "<group>"; };
+		AED685FA66D576A3CE935CC3A5E4939E /* BSImageView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BSImageView.release.xcconfig; sourceTree = "<group>"; };
+		B29E55FEC21461D639876E5289BE875C /* BSGridCollectionViewLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BSGridCollectionViewLayout-dummy.m"; sourceTree = "<group>"; };
+		B2B671EED74D9FFC6CA3CD1BE2D87292 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		B400780BE48F92BF027895E91957902F /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
 		BE7737353E7602C4302C41FBEFC2F614 /* Pods-Triage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Triage.release.xcconfig"; sourceTree = "<group>"; };
 		C02FC117DC6D1D6EB6E9C17786BECE9E /* Pods-Triage-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Triage-frameworks.sh"; sourceTree = "<group>"; };
-		CCF7BE37B3E44B9611A81EDFA8A0357D /* AlbumCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumCell.swift; path = Source/View/AlbumCell.swift; sourceTree = "<group>"; };
-		D113E514F953A68CF6B1A03D63F2B0EB /* ComposedCollectionViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ComposedCollectionViewDataSource.swift; path = Source/Model/ComposedCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		C63B57438F392FB63A9F953BF9D80E3A /* AlbumCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumCell.swift; path = Source/View/AlbumCell.swift; sourceTree = "<group>"; };
+		CC8E34B37DCA0A5A2C864E2895D8CFF1 /* PhotoCollectionViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoCollectionViewDataSource.swift; path = Source/Model/PhotoCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		CE818EE655C521C12A7E04952AB6111F /* PhotosViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotosViewController.swift; path = Source/Controller/PhotosViewController.swift; sourceTree = "<group>"; };
 		D258FC2D6C9A20A3F92F280E9DCDF9DA /* Pods-Triage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Triage-dummy.m"; sourceTree = "<group>"; };
-		DBAC74F11C61D1006FF194ECDFEA9229 /* BSImagePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BSImagePicker.modulemap; sourceTree = "<group>"; };
-		DDFD99B9A33FAB22BA30BEDC7378AF2B /* AlbumTableViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumTableViewDataSource.swift; path = Source/Model/AlbumTableViewDataSource.swift; sourceTree = "<group>"; };
-		DF597F4A4DC38A0C473F952B4C935E64 /* BSImageView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSImageView-umbrella.h"; sourceTree = "<group>"; };
-		DF8B3BD878200A8401710BAC71F7786F /* BSImageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSImageView-prefix.pch"; sourceTree = "<group>"; };
-		EB5FB15563D570C3FF644EA0DCCA1216 /* arrow_down@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "arrow_down@1x.png"; path = "Assets/arrow_down@1x.png"; sourceTree = "<group>"; };
+		D2997076D30C3E6B05940FC6627AF70E /* BonsaiController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BonsaiController-umbrella.h"; sourceTree = "<group>"; };
+		D5D34DA3022D1C59BB34D1FF43E97195 /* add_photo.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = add_photo.png; path = Assets/add_photo.png; sourceTree = "<group>"; };
+		DA9D53E449C3AC2232AFD9FFEA77255C /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		DE6D87B8FC48EC85900143D530BB0555 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		E153C7A2CCA3DC3A4E4033C73473DE4F /* Settings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Settings.swift; path = Source/Model/Settings.swift; sourceTree = "<group>"; };
+		E268C5E41CD592FA9573A5D725E80E53 /* arrow_down@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "arrow_down@1x.png"; path = "Assets/arrow_down@1x.png"; sourceTree = "<group>"; };
+		E51782A654111915844EE1BE419F31DA /* add_photo@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "add_photo@3x.png"; path = "Assets/add_photo@3x.png"; sourceTree = "<group>"; };
+		E7485F9F9936720D57C0A811DED0E35A /* GoogleMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.release.xcconfig; sourceTree = "<group>"; };
+		E7EE03DF61ADE2AAD3C1CA754D4EAFD6 /* PhotoCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = PhotoCell.xib; path = Assets/PhotoCell.xib; sourceTree = "<group>"; };
 		EE374B410A71E525ABD99F84B9925604 /* Pods_Triage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Triage.framework; path = "Pods-Triage.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9D0E4D088A873613DE7C885D9E06FCD /* BSImagePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BSImagePicker-dummy.m"; sourceTree = "<group>"; };
+		F059B5087C4DE265A87385A68DA3315C /* GooglePlaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooglePlaces.release.xcconfig; sourceTree = "<group>"; };
+		F332EB294714CC4A1CA17AAC5E10D1D4 /* add_photo@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "add_photo@2x.png"; path = "Assets/add_photo@2x.png"; sourceTree = "<group>"; };
+		F48B54D3B75C77745390CB7B7A14FFBD /* BSImagePickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BSImagePickerViewController.swift; path = Source/Controller/BSImagePickerViewController.swift; sourceTree = "<group>"; };
+		F684C37950EEE3A37CBC6207400FDB54 /* PhotoCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoCell.swift; path = Source/View/PhotoCell.swift; sourceTree = "<group>"; };
+		F6F94F4845021C84C6D624FB8FF0DBE3 /* BonsaiController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BonsaiController.debug.xcconfig; sourceTree = "<group>"; };
+		F778F460F172824EE2A711BD84D67A4B /* CameraCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraCell.swift; path = Source/View/CameraCell.swift; sourceTree = "<group>"; };
+		F7CEA091CDC8872D11AB0181DD615746 /* BSImageView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSImageView-umbrella.h"; sourceTree = "<group>"; };
+		F8E73DD28477341EC95A09608D68112D /* UIViewController+BSImagePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+BSImagePicker.swift"; path = "Source/Extension/UIViewController+BSImagePicker.swift"; sourceTree = "<group>"; };
+		FA3274679016DAE786FD211849484D45 /* BSImageView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BSImageView.debug.xcconfig; sourceTree = "<group>"; };
+		FA96D700FC90B5CD07B82EDAFB9AB2C6 /* ResourceBundle-BSImagePicker-BSImagePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-BSImagePicker-BSImagePicker-Info.plist"; sourceTree = "<group>"; };
 		FE28E10A23C3BE040BE8B5B3A688DC33 /* Pods-Triage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Triage.modulemap"; sourceTree = "<group>"; };
-		FEBDFA21ECB35F85E32956638DFB3C6C /* BSImageView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BSImageView-dummy.m"; sourceTree = "<group>"; };
-		FFF84C11F76E01D9F1F66A162DDF8488 /* BSImageView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BSImageView.release.xcconfig; sourceTree = "<group>"; };
-		FFFFAFE9D42F88241883EC6B1C52DB2E /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2A3B0E9CD3B61E9F924CC2CF8658714E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20A89DA00AC4D69E039FAB653CC96D0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3E7BF8634A442824B976B30C830C537A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -250,19 +282,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4DB1D7FEE82EF79168C5ECEBFEC724D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BDB8F4E75CC8413CBD27F3C07DA762B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A14ED1443ABC194442A62A82F74EACDB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B7460614D6E18381B42A179A54BEC05A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B4C15D4840522BA0E6990FEAB7B74B7C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5C2EEBF404873F41DAE34B502C8432C0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,79 +309,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		030D84E9851B58C7B9747DE85C09CB81 /* Support Files */ = {
+		09FADE26234B95728A0A1B4C28E566CF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				81D611C5B0DCA9C31421221C14D89B37 /* GooglePlaces.debug.xcconfig */,
-				0757FD79297208C9367BD5649571F226 /* GooglePlaces.release.xcconfig */,
+				34412F0660DA7F80831E0C87AB5016B2 /* BSGridCollectionViewLayout.modulemap */,
+				B29E55FEC21461D639876E5289BE875C /* BSGridCollectionViewLayout-dummy.m */,
+				0CE2C1CAF9AD130EC905F74A07649529 /* BSGridCollectionViewLayout-Info.plist */,
+				3D4CF44587EDFF0FB20AB0A7F67711CA /* BSGridCollectionViewLayout-prefix.pch */,
+				265ADD659D037BD944AD3C0B82F5B615 /* BSGridCollectionViewLayout-umbrella.h */,
+				317E923F4D93B5D36252609561CE7442 /* BSGridCollectionViewLayout.debug.xcconfig */,
+				94F1DF7184988BC42DA8DE087924401F /* BSGridCollectionViewLayout.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BSGridCollectionViewLayout";
+			sourceTree = "<group>";
+		};
+		272F6032F1A428097816AF52E05D74F0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				845E19A377077833EF5755422092EB10 /* GooglePlaces.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2CA956089561B690D0E33C93EBFF31B3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0303E27DFE6986F633877312A1C943CD /* GoogleMaps.debug.xcconfig */,
+				E7485F9F9936720D57C0A811DED0E35A /* GoogleMaps.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleMaps";
+			sourceTree = "<group>";
+		};
+		31400092C6E006365E0B9B52E4C2E30F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CB622F726AFEC0FAD3A6F8D595C3FCF /* GooglePlaces.debug.xcconfig */,
+				F059B5087C4DE265A87385A68DA3315C /* GooglePlaces.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/GooglePlaces";
-			sourceTree = "<group>";
-		};
-		0541D6E30CAC42E23724E33B4AE0DBF7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FFFFAFE9D42F88241883EC6B1C52DB2E /* GooglePlaces.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		0B5A087E40C63BE8E46080906C96CD6C /* GoogleMaps */ = {
-			isa = PBXGroup;
-			children = (
-				731104D0FFC17FD8C39D6B5E1D953A72 /* Base */,
-				FC849979F761D905F0BED73AE74C06C7 /* Maps */,
-				88851C789E9EBF5F20F5FB6A9DD0A7A2 /* Support Files */,
-			);
-			name = GoogleMaps;
-			path = GoogleMaps;
-			sourceTree = "<group>";
-		};
-		0C390508153C6120BA00B354516B72C4 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				81CE321B0297EA42E548130EFC763293 /* add_photo.png */,
-				4832E7C9236FDBFFB5F52DB80E91802B /* add_photo@2x.png */,
-				7A6033F4DDE56FD2ED28C449C69A0ADF /* add_photo@3x.png */,
-				B7FB70C15FE7764F1ADE79E9D1DBE57D /* Albums.storyboard */,
-				EB5FB15563D570C3FF644EA0DCCA1216 /* arrow_down@1x.png */,
-				76376A3B7A517E0A58B49DC6F91D759F /* arrow_down@2x.png */,
-				43A443269B2E2C24055C0368F25CF8A1 /* arrow_down@3x.png */,
-				A0998869288EC1FD7C01FFE414B24FFF /* CameraCell.xib */,
-				4F3F9DA0522D9D5DCBDD6367A55F8093 /* PhotoCell.xib */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		1803AE2B11835759171C8E2C4A3B0574 /* BSGridCollectionViewLayout */ = {
-			isa = PBXGroup;
-			children = (
-				0B630E85829CA3AF38D280D7D5699048 /* GridCollectionViewLayout.swift */,
-				40E3F19C1E011C1FE5081B1218C75299 /* Support Files */,
-			);
-			name = BSGridCollectionViewLayout;
-			path = BSGridCollectionViewLayout;
-			sourceTree = "<group>";
-		};
-		20A6B5D26A53A8E6258BA0012C870F48 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5AB70C624E37F9997F7A7245073C9A3C /* BSGridCollectionViewLayout.framework */,
-				5A0EEC8ACA4B2E5B39E21D0E018587C3 /* BSImagePicker.bundle */,
-				1F08AE4B81A4E4ECE65672A185E38F78 /* BSImagePicker.framework */,
-				25093D3B03BDA71257913C3FC8C8A30D /* BSImageView.framework */,
-				EE374B410A71E525ABD99F84B9925604 /* Pods_Triage.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		351388D07013D36A210D16B737F2A752 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				20170E2D397EC39FABAA807B9EA720F8 /* GoogleMaps.bundle */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		3F413E70AAC0161AA879A677F3ED97C9 /* Frameworks */ = {
@@ -362,79 +362,143 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		40E3F19C1E011C1FE5081B1218C75299 /* Support Files */ = {
+		4998B84494FD8323EF8BD294F3A4F24B /* BSImageView */ = {
 			isa = PBXGroup;
 			children = (
-				5392E9E0AD0EF66D5C75DE7A602EF476 /* BSGridCollectionViewLayout.modulemap */,
-				6CD829A25819CF0A4CB1485A3FD4D25F /* BSGridCollectionViewLayout-dummy.m */,
-				B67668CBCCA20B42EB7976240BF4DF9E /* BSGridCollectionViewLayout-Info.plist */,
-				73961F563EF9B892CBE0693DD8303BA2 /* BSGridCollectionViewLayout-prefix.pch */,
-				67C5B25023EDD540CDB92FE621B88A6C /* BSGridCollectionViewLayout-umbrella.h */,
-				1ACAEE3BA0D0405D0089D2A491B94228 /* BSGridCollectionViewLayout.debug.xcconfig */,
-				987D57548C9E816816CB56CA1BBD3051 /* BSGridCollectionViewLayout.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/BSGridCollectionViewLayout";
-			sourceTree = "<group>";
-		};
-		43ABBAC6905CB7362FEDD83E2197F1F6 /* GooglePlaces */ = {
-			isa = PBXGroup;
-			children = (
-				0541D6E30CAC42E23724E33B4AE0DBF7 /* Frameworks */,
-				A5D352EE0122CC1D7FD63EE73E0ECFFB /* Resources */,
-				030D84E9851B58C7B9747DE85C09CB81 /* Support Files */,
-			);
-			name = GooglePlaces;
-			path = GooglePlaces;
-			sourceTree = "<group>";
-		};
-		5D713BE5A7D0A4BC0272743625F9121B /* BSImageView */ = {
-			isa = PBXGroup;
-			children = (
-				1ECC8968263300650D9CFD82CD7662D1 /* BSImageView.swift */,
-				0B2DF1E48578296E26B713B246A260BA /* ImageViewLayout.swift */,
-				EE746745CBC508705BC21F376EC460F5 /* Support Files */,
+				4E33CA550BEDEDE7AEBA4730DF251A31 /* BSImageView.swift */,
+				AB856AB11A76435C56952E48E29AC394 /* ImageViewLayout.swift */,
+				BD9B834567879DC41F6AE61A8A72440C /* Support Files */,
 			);
 			name = BSImageView;
 			path = BSImageView;
 			sourceTree = "<group>";
 		};
-		731104D0FFC17FD8C39D6B5E1D953A72 /* Base */ = {
+		4B31B802A9F8BA90B3BFD0F21D93BD96 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				7472B2B84D7F6E68DC2B5412134FC213 /* Frameworks */,
+				A99961B547E0BB326E22FAEDAC586A1C /* Frameworks */,
+				4DB1E30919940BA0A1B58C19C35E1F3A /* Resources */,
 			);
-			name = Base;
+			name = Maps;
 			sourceTree = "<group>";
 		};
-		7472B2B84D7F6E68DC2B5412134FC213 /* Frameworks */ = {
+		4DB1E30919940BA0A1B58C19C35E1F3A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4809B7AA1CE1D85AF70245A13070E304 /* GoogleMapsBase.framework */,
+				645CBB5B9CE078646EFEC915BD4F688C /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5275C9D7A6CF88D479B7C4A6FF78FB2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA9D53E449C3AC2232AFD9FFEA77255C /* GooglePlaces.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8212570C540E22533761B11CF9B2F155 /* Pods */ = {
+		612620C35AC5D535382E1E0AA8D51000 /* GoogleMaps */ = {
 			isa = PBXGroup;
 			children = (
-				1803AE2B11835759171C8E2C4A3B0574 /* BSGridCollectionViewLayout */,
-				A4CF04DCCD1DE8314CC3CF48DD5B8090 /* BSImagePicker */,
-				5D713BE5A7D0A4BC0272743625F9121B /* BSImageView */,
-				0B5A087E40C63BE8E46080906C96CD6C /* GoogleMaps */,
-				43ABBAC6905CB7362FEDD83E2197F1F6 /* GooglePlaces */,
+				75B0E995E4BF13EA6AB4E2D57896A5DA /* Base */,
+				4B31B802A9F8BA90B3BFD0F21D93BD96 /* Maps */,
+				2CA956089561B690D0E33C93EBFF31B3 /* Support Files */,
 			);
-			name = Pods;
+			name = GoogleMaps;
+			path = GoogleMaps;
 			sourceTree = "<group>";
 		};
-		88851C789E9EBF5F20F5FB6A9DD0A7A2 /* Support Files */ = {
+		6475044F934773C66E378B0FBDBFB5DD /* BonsaiController */ = {
 			isa = PBXGroup;
 			children = (
-				2B3786122E797F70ED6FA8BDEBB13353 /* GoogleMaps.debug.xcconfig */,
-				521A63C89B9ED2E16EAC2596F14A3496 /* GoogleMaps.release.xcconfig */,
+				3612601358C910D4FF37376019232D27 /* BonsaiController.swift */,
+				9C5A889AD891360E87C69A0C8114B361 /* BubbleTransition.swift */,
+				34BDF0A47DC0A536E1D30D7794C53BD5 /* SlideInTransition.swift */,
+				7F7FD73A5F8B09DDF96A077F5A62B18D /* Support Files */,
+			);
+			name = BonsaiController;
+			path = BonsaiController;
+			sourceTree = "<group>";
+		};
+		658F7D5F8F46538CFB6D416B7EEE5BF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27B91A616D3E3D080255C6C93A591F62 /* BonsaiController.framework */,
+				5AB70C624E37F9997F7A7245073C9A3C /* BSGridCollectionViewLayout.framework */,
+				5A0EEC8ACA4B2E5B39E21D0E018587C3 /* BSImagePicker.bundle */,
+				1F08AE4B81A4E4ECE65672A185E38F78 /* BSImagePicker.framework */,
+				25093D3B03BDA71257913C3FC8C8A30D /* BSImageView.framework */,
+				EE374B410A71E525ABD99F84B9925604 /* Pods_Triage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75B0E995E4BF13EA6AB4E2D57896A5DA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EB8E672B82488841E7FADC96D081C622 /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		7B049590CD26EB0BF4C004E03DA823C5 /* BSImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				C63B57438F392FB63A9F953BF9D80E3A /* AlbumCell.swift */,
+				8DBD2345A7A205D5869DF8B490B12816 /* AlbumsViewController.swift */,
+				550500AF82A5331BBD3867D19DE92C9A /* AlbumTableViewDataSource.swift */,
+				6E68C28C64061F60E41C1CF69A4B8A08 /* AlbumTitleView.swift */,
+				4B0BAA091A6AC3BBE5E72C6A2663D896 /* BSImagePickerSettings.swift */,
+				F48B54D3B75C77745390CB7B7A14FFBD /* BSImagePickerViewController.swift */,
+				F778F460F172824EE2A711BD84D67A4B /* CameraCell.swift */,
+				66B6B0734974A2450CE18BE5C9384025 /* CameraCollectionViewDataSource.swift */,
+				A3E4535F648EFA8B48699DE15FD587CD /* ComposedCollectionViewDataSource.swift */,
+				7958B0ACA56CC834BE1CD027AA82CCE8 /* NSIndexSet+NSIndexPath.swift */,
+				F684C37950EEE3A37CBC6207400FDB54 /* PhotoCell.swift */,
+				CC8E34B37DCA0A5A2C864E2895D8CFF1 /* PhotoCollectionViewDataSource.swift */,
+				CE818EE655C521C12A7E04952AB6111F /* PhotosViewController.swift */,
+				9F835D42ADD079B33D922E4F5461FB7F /* PreviewViewController.swift */,
+				95727902136077EDCFFCF5A752C814F5 /* SelectionView.swift */,
+				E153C7A2CCA3DC3A4E4033C73473DE4F /* Settings.swift */,
+				F8E73DD28477341EC95A09608D68112D /* UIViewController+BSImagePicker.swift */,
+				095E94B9C9339490D47B583BECAC94DC /* ZoomAnimator.swift */,
+				8F78830CEB4D70ED6C5714C274D78363 /* Resources */,
+				E564EDC3B13EA1218698DEAE9FA2459B /* Support Files */,
+			);
+			name = BSImagePicker;
+			path = BSImagePicker;
+			sourceTree = "<group>";
+		};
+		7F7FD73A5F8B09DDF96A077F5A62B18D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				07A82F5A37E6B7DA124185B3062AED66 /* BonsaiController.modulemap */,
+				0D5EA4B98D4036117B2121AE3827E4F9 /* BonsaiController-dummy.m */,
+				2C6D020EACE03B0B41CA77CF448BD3E5 /* BonsaiController-Info.plist */,
+				A0F5B50CFF9FD910A21860A12E11648D /* BonsaiController-prefix.pch */,
+				D2997076D30C3E6B05940FC6627AF70E /* BonsaiController-umbrella.h */,
+				F6F94F4845021C84C6D624FB8FF0DBE3 /* BonsaiController.debug.xcconfig */,
+				201EFCA1C33748B28001EEBA797ED62C /* BonsaiController.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/GoogleMaps";
+			path = "../Target Support Files/BonsaiController";
+			sourceTree = "<group>";
+		};
+		8F78830CEB4D70ED6C5714C274D78363 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D5D34DA3022D1C59BB34D1FF43E97195 /* add_photo.png */,
+				F332EB294714CC4A1CA17AAC5E10D1D4 /* add_photo@2x.png */,
+				E51782A654111915844EE1BE419F31DA /* add_photo@3x.png */,
+				997DFE99DB9BF6DFCDFB147C04D8B8B5 /* Albums.storyboard */,
+				E268C5E41CD592FA9573A5D725E80E53 /* arrow_down@1x.png */,
+				2326327670DC9CD6D380C6BAF6E9FA44 /* arrow_down@2x.png */,
+				9B694B0494E4EB2BD10D811FBA31619A /* arrow_down@3x.png */,
+				6A95B9D1BF21953072D2EC3A5BC5131D /* CameraCell.xib */,
+				E7EE03DF61ADE2AAD3C1CA754D4EAFD6 /* PhotoCell.xib */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		91A19E04DA9101B3FBDDEC406858F2FF /* iOS */ = {
@@ -447,56 +511,51 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		A4CF04DCCD1DE8314CC3CF48DD5B8090 /* BSImagePicker */ = {
+		A99961B547E0BB326E22FAEDAC586A1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CCF7BE37B3E44B9611A81EDFA8A0357D /* AlbumCell.swift */,
-				962565EC4EB8CB089F90D78089A13E56 /* AlbumsViewController.swift */,
-				DDFD99B9A33FAB22BA30BEDC7378AF2B /* AlbumTableViewDataSource.swift */,
-				6D9235FD747457CA68F7125E7F71092D /* AlbumTitleView.swift */,
-				760D67A68502257B8B2547C90DB7837D /* BSImagePickerSettings.swift */,
-				3517D3A6A20F8247F72C30126D6082A6 /* BSImagePickerViewController.swift */,
-				06D7C5A47852DA33D98D8CBA398F8D84 /* CameraCell.swift */,
-				67B786AF6586A98B2D90A9BEE1D73AC8 /* CameraCollectionViewDataSource.swift */,
-				D113E514F953A68CF6B1A03D63F2B0EB /* ComposedCollectionViewDataSource.swift */,
-				B27E7711C59BB5FDF9AF6FCF97C9C5E0 /* NSIndexSet+NSIndexPath.swift */,
-				A6E1EC5C5D500235B2DB8B0FC0436170 /* PhotoCell.swift */,
-				73EF737AA937847B8BD54FAC7DAF4192 /* PhotoCollectionViewDataSource.swift */,
-				997D821BD51B46826C69A4F553FF83CA /* PhotosViewController.swift */,
-				10CF19C590B68048BBAF40E3AB69C819 /* PreviewViewController.swift */,
-				63E24681979BB75B841C4AEB5E023360 /* SelectionView.swift */,
-				65617845C119E66AF26329289F4E9217 /* Settings.swift */,
-				1A1E04887824E935FE030176FC6A9AEE /* UIViewController+BSImagePicker.swift */,
-				619AA5A5F6C1D193DE955CC197042253 /* ZoomAnimator.swift */,
-				0C390508153C6120BA00B354516B72C4 /* Resources */,
-				AAFF0072FF2DD6AD3E7B46A2DD4060A0 /* Support Files */,
+				DE6D87B8FC48EC85900143D530BB0555 /* GoogleMaps.framework */,
+				B2B671EED74D9FFC6CA3CD1BE2D87292 /* GoogleMapsCore.framework */,
 			);
-			name = BSImagePicker;
-			path = BSImagePicker;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A5D352EE0122CC1D7FD63EE73E0ECFFB /* Resources */ = {
+		B22D3D303EAF0A85128F33C3F3B00B6A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				16D4C77F697FC28B1955F3F05BA71A33 /* GooglePlaces.bundle */,
+				6475044F934773C66E378B0FBDBFB5DD /* BonsaiController */,
+				CCD45882D39AEAADFA5831FDE36D71CB /* BSGridCollectionViewLayout */,
+				7B049590CD26EB0BF4C004E03DA823C5 /* BSImagePicker */,
+				4998B84494FD8323EF8BD294F3A4F24B /* BSImageView */,
+				612620C35AC5D535382E1E0AA8D51000 /* GoogleMaps */,
+				D9A008063042EDE858B23D09E2C38F89 /* GooglePlaces */,
 			);
-			name = Resources;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		AAFF0072FF2DD6AD3E7B46A2DD4060A0 /* Support Files */ = {
+		BD9B834567879DC41F6AE61A8A72440C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DBAC74F11C61D1006FF194ECDFEA9229 /* BSImagePicker.modulemap */,
-				F9D0E4D088A873613DE7C885D9E06FCD /* BSImagePicker-dummy.m */,
-				80265A27B1B3A87989F63F9656892C21 /* BSImagePicker-Info.plist */,
-				24BB4FB7BD5144E9C925493F4EF90A33 /* BSImagePicker-prefix.pch */,
-				60EFA8BD2FB00026A4EE46D0449EA5AF /* BSImagePicker-umbrella.h */,
-				655D36238183F59FADD0E6CC4003D005 /* BSImagePicker.debug.xcconfig */,
-				45E722461181566B0DCD1E728CB06790 /* BSImagePicker.release.xcconfig */,
-				B065981AB628C214F1E8A799638F6C68 /* ResourceBundle-BSImagePicker-BSImagePicker-Info.plist */,
+				99C7593F02654AEF507AA6A6199DA7E0 /* BSImageView.modulemap */,
+				AB1530454215CB4CFFA06CCD4525970C /* BSImageView-dummy.m */,
+				ADFF3E6DED2FA422596821464D3845A3 /* BSImageView-Info.plist */,
+				12D7CD8E8690AA71353705F9AE657464 /* BSImageView-prefix.pch */,
+				F7CEA091CDC8872D11AB0181DD615746 /* BSImageView-umbrella.h */,
+				FA3274679016DAE786FD211849484D45 /* BSImageView.debug.xcconfig */,
+				AED685FA66D576A3CE935CC3A5E4939E /* BSImageView.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/BSImagePicker";
+			path = "../Target Support Files/BSImageView";
+			sourceTree = "<group>";
+		};
+		CCD45882D39AEAADFA5831FDE36D71CB /* BSGridCollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				A986CFB78CB48521B3A06980FC584A08 /* GridCollectionViewLayout.swift */,
+				09FADE26234B95728A0A1B4C28E566CF /* Support Files */,
+			);
+			name = BSGridCollectionViewLayout;
+			path = BSGridCollectionViewLayout;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -504,19 +563,10 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				3F413E70AAC0161AA879A677F3ED97C9 /* Frameworks */,
-				8212570C540E22533761B11CF9B2F155 /* Pods */,
-				20A6B5D26A53A8E6258BA0012C870F48 /* Products */,
+				B22D3D303EAF0A85128F33C3F3B00B6A /* Pods */,
+				658F7D5F8F46538CFB6D416B7EEE5BF6 /* Products */,
 				DE990231F67B4E23D72053C18F120AF6 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D690DBD029DDE18483C9F64FCE1A09FF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8C7748F38B692827D75CE4777FC2336F /* GoogleMaps.framework */,
-				75C4347414B211C8BA5602BF22B5F0F5 /* GoogleMapsCore.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D8B2D869EC736586EBDA710B4F2C2A5D /* Pods-Triage */ = {
@@ -537,6 +587,17 @@
 			path = "Target Support Files/Pods-Triage";
 			sourceTree = "<group>";
 		};
+		D9A008063042EDE858B23D09E2C38F89 /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				5275C9D7A6CF88D479B7C4A6FF78FB2F /* Frameworks */,
+				272F6032F1A428097816AF52E05D74F0 /* Resources */,
+				31400092C6E006365E0B9B52E4C2E30F /* Support Files */,
+			);
+			name = GooglePlaces;
+			path = GooglePlaces;
+			sourceTree = "<group>";
+		};
 		DE990231F67B4E23D72053C18F120AF6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -545,28 +606,28 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		EE746745CBC508705BC21F376EC460F5 /* Support Files */ = {
+		E564EDC3B13EA1218698DEAE9FA2459B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0185D6DC1659B87B9D7BDFF8D0CF5D1F /* BSImageView.modulemap */,
-				FEBDFA21ECB35F85E32956638DFB3C6C /* BSImageView-dummy.m */,
-				0D0F701DFCD2AEAA922220E83CB647FA /* BSImageView-Info.plist */,
-				DF8B3BD878200A8401710BAC71F7786F /* BSImageView-prefix.pch */,
-				DF597F4A4DC38A0C473F952B4C935E64 /* BSImageView-umbrella.h */,
-				223C1E0A1E45EAB79EE0926F9EE07AC0 /* BSImageView.debug.xcconfig */,
-				FFF84C11F76E01D9F1F66A162DDF8488 /* BSImageView.release.xcconfig */,
+				ACA6D76B10282ED8079712EE04DD4AD4 /* BSImagePicker.modulemap */,
+				79B98A0FC3BDF5C4A968183795412B59 /* BSImagePicker-dummy.m */,
+				5DF303CFC9695BFE7B3A66E15955637C /* BSImagePicker-Info.plist */,
+				180BA6691C775B1E2C47AC186858C9AA /* BSImagePicker-prefix.pch */,
+				4FE70C6F47642265762469D3C8CCD947 /* BSImagePicker-umbrella.h */,
+				9E3B58C55B018BFB6E2A3D9A1067F444 /* BSImagePicker.debug.xcconfig */,
+				7ABF53788C3A858BA1825AB0B29311C1 /* BSImagePicker.release.xcconfig */,
+				FA96D700FC90B5CD07B82EDAFB9AB2C6 /* ResourceBundle-BSImagePicker-BSImagePicker-Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/BSImageView";
+			path = "../Target Support Files/BSImagePicker";
 			sourceTree = "<group>";
 		};
-		FC849979F761D905F0BED73AE74C06C7 /* Maps */ = {
+		EB8E672B82488841E7FADC96D081C622 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D690DBD029DDE18483C9F64FCE1A09FF /* Frameworks */,
-				351388D07013D36A210D16B737F2A752 /* Resources */,
+				B400780BE48F92BF027895E91957902F /* GoogleMapsBase.framework */,
 			);
-			name = Maps;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -588,11 +649,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9E1DB99919DCFF35675EEB976E27BBFF /* Headers */ = {
+		B45AC7DCD2B3AD633D2A9E79D681D7BB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A043D77725B1419B35F853F4D7749C3F /* Pods-Triage-umbrella.h in Headers */,
+				CB75C8E096148DC8CC2BDCE4662A0F68 /* BonsaiController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B568903FB1B876AF29E1917BED0DCAE7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73392A164B1D8671E31CBC01DFE29B8E /* Pods-Triage-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,25 +678,44 @@
 /* Begin PBXNativeTarget section */
 		132A8391EEEED00CC73CF40DFFE195C7 /* Pods-Triage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4373DC8937C76E4651F368BD62EB5B1D /* Build configuration list for PBXNativeTarget "Pods-Triage" */;
+			buildConfigurationList = D4924DA3C5775CBAF4329941533E2409 /* Build configuration list for PBXNativeTarget "Pods-Triage" */;
 			buildPhases = (
-				9E1DB99919DCFF35675EEB976E27BBFF /* Headers */,
-				F1E96587FA680C1FE35EDFDF812C0B2D /* Sources */,
-				B4C15D4840522BA0E6990FEAB7B74B7C /* Frameworks */,
-				6B8F2E69E8E4D7355D500AA838B79313 /* Resources */,
+				B568903FB1B876AF29E1917BED0DCAE7 /* Headers */,
+				DDA56FF6D669EBEA9B0A0DFB5FE7F615 /* Sources */,
+				4DB1D7FEE82EF79168C5ECEBFEC724D0 /* Frameworks */,
+				1478E63E684E2B7931DCC4FFE4BAB81C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5458C50513D619B8A83CEF15C3217551 /* PBXTargetDependency */,
-				B3CA22099C93BBB789AC2A2E76D4E8E6 /* PBXTargetDependency */,
-				695C9D7054A48AF429015743C269E495 /* PBXTargetDependency */,
-				4F9B5C46D5E1A47A8F0E22EFD06AD0B8 /* PBXTargetDependency */,
-				BFC70C8B7988FC3B452CED6ED9BA764B /* PBXTargetDependency */,
+				D9EAA086B2B9133954359A8CAA20AE00 /* PBXTargetDependency */,
+				1C63D5739DFCF9CF985DB7C54EF1A82D /* PBXTargetDependency */,
+				94C4B984BEB0880C79EF752EAAC43B58 /* PBXTargetDependency */,
+				1853C795AB6A3EDEB08EC06E7230B6DF /* PBXTargetDependency */,
+				1EE9FC46D621A38581D9B9398F7E3B8C /* PBXTargetDependency */,
+				700352DB068EB32A5E1F1045680D7BA2 /* PBXTargetDependency */,
 			);
 			name = "Pods-Triage";
 			productName = "Pods-Triage";
 			productReference = EE374B410A71E525ABD99F84B9925604 /* Pods_Triage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2FC272E5264771C98573AEA8FB92240D /* BonsaiController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 439B023EB0FA3E4012D3B860EEFD211C /* Build configuration list for PBXNativeTarget "BonsaiController" */;
+			buildPhases = (
+				B45AC7DCD2B3AD633D2A9E79D681D7BB /* Headers */,
+				9870520D6705E305D300E0FE04C59FB5 /* Sources */,
+				2A3B0E9CD3B61E9F924CC2CF8658714E /* Frameworks */,
+				E257465CB68D92F9EBEF0EA650815D16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BonsaiController;
+			productName = BonsaiController;
+			productReference = 27B91A616D3E3D080255C6C93A591F62 /* BonsaiController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		377E69F20375EB612410D6BD87B4AF98 /* BSImagePicker */ = {
@@ -714,7 +802,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -722,10 +810,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 20A6B5D26A53A8E6258BA0012C870F48 /* Products */;
+			productRefGroup = 658F7D5F8F46538CFB6D416B7EEE5BF6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				2FC272E5264771C98573AEA8FB92240D /* BonsaiController */,
 				434AF40538EB4723A91D166A06871292 /* BSGridCollectionViewLayout */,
 				377E69F20375EB612410D6BD87B4AF98 /* BSImagePicker */,
 				7F03C7C8BA59A32177B1216C274F4369 /* BSImagePicker-BSImagePicker */,
@@ -738,6 +827,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1478E63E684E2B7931DCC4FFE4BAB81C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		24080A6AE21054C829015789CAD477A8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -750,13 +846,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B962E6C5A42CD62410163F76A5BED131 /* BSImagePicker.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6B8F2E69E8E4D7355D500AA838B79313 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,6 +866,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D78978529F396BAE7704C27C6F4EBFAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E257465CB68D92F9EBEF0EA650815D16 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -838,11 +934,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1E96587FA680C1FE35EDFDF812C0B2D /* Sources */ = {
+		9870520D6705E305D300E0FE04C59FB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E3BDB0049BB081FDBE1212B638A4565 /* Pods-Triage-dummy.m in Sources */,
+				7FF4F77DE1C0BF3E5197CA742DDFD6FA /* BonsaiController-dummy.m in Sources */,
+				DC0A43BF131B4A6C3A3C53F34CB2444E /* BonsaiController.swift in Sources */,
+				EA7C4E583BAD402C4D04F87AF5C6F2FB /* BubbleTransition.swift in Sources */,
+				29DE6DB6FCCAB675EDB8C9967EEBB8E3 /* SlideInTransition.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDA56FF6D669EBEA9B0A0DFB5FE7F615 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B45FFFCE88A59F7ACF622DEC1DA792F /* Pods-Triage-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -855,23 +962,29 @@
 			target = 7F03C7C8BA59A32177B1216C274F4369 /* BSImagePicker-BSImagePicker */;
 			targetProxy = 376DD3A381F2F328923567DDDBC3439D /* PBXContainerItemProxy */;
 		};
-		4F9B5C46D5E1A47A8F0E22EFD06AD0B8 /* PBXTargetDependency */ = {
+		1853C795AB6A3EDEB08EC06E7230B6DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BonsaiController;
+			target = 2FC272E5264771C98573AEA8FB92240D /* BonsaiController */;
+			targetProxy = 51FFC29FD7434D2F8773BD6612B51209 /* PBXContainerItemProxy */;
+		};
+		1C63D5739DFCF9CF985DB7C54EF1A82D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BSImagePicker;
+			target = 377E69F20375EB612410D6BD87B4AF98 /* BSImagePicker */;
+			targetProxy = DDCB4E24953C180FC26E2BA91E93F94C /* PBXContainerItemProxy */;
+		};
+		1EE9FC46D621A38581D9B9398F7E3B8C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GoogleMaps;
 			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
-			targetProxy = 355C32665E2BF593AF04877BA7B6BBC4 /* PBXContainerItemProxy */;
+			targetProxy = 9117FE46C55BC98C74D4740BAFE97521 /* PBXContainerItemProxy */;
 		};
-		5458C50513D619B8A83CEF15C3217551 /* PBXTargetDependency */ = {
+		700352DB068EB32A5E1F1045680D7BA2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = BSGridCollectionViewLayout;
-			target = 434AF40538EB4723A91D166A06871292 /* BSGridCollectionViewLayout */;
-			targetProxy = 7033A8FFDB7CA69AB699254535618349 /* PBXContainerItemProxy */;
-		};
-		695C9D7054A48AF429015743C269E495 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BSImageView;
-			target = 4205A641CA6A7B8F19FBBC43B3EC5CC4 /* BSImageView */;
-			targetProxy = 6B9415E501154CEA844009AE8141EE58 /* PBXContainerItemProxy */;
+			name = GooglePlaces;
+			target = 0C1885900810601510E0C632060FAF26 /* GooglePlaces */;
+			targetProxy = BC44C5F9F32CEF4D4AC00FE6B525B4DF /* PBXContainerItemProxy */;
 		};
 		801D9B3DED2B7380434EC8AF46267F86 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -879,11 +992,11 @@
 			target = 434AF40538EB4723A91D166A06871292 /* BSGridCollectionViewLayout */;
 			targetProxy = 53D087D171DC0B311F3E16AF0E0FA85C /* PBXContainerItemProxy */;
 		};
-		B3CA22099C93BBB789AC2A2E76D4E8E6 /* PBXTargetDependency */ = {
+		94C4B984BEB0880C79EF752EAAC43B58 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = BSImagePicker;
-			target = 377E69F20375EB612410D6BD87B4AF98 /* BSImagePicker */;
-			targetProxy = 8E042BBC26C502883C787414C8725BAE /* PBXContainerItemProxy */;
+			name = BSImageView;
+			target = 4205A641CA6A7B8F19FBBC43B3EC5CC4 /* BSImageView */;
+			targetProxy = F4E623919C6DEA7BE1E9D497067C0BB1 /* PBXContainerItemProxy */;
 		};
 		BCDC6C000DE8E83F4F9C7FC30A39FB03 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -891,21 +1004,56 @@
 			target = 4205A641CA6A7B8F19FBBC43B3EC5CC4 /* BSImageView */;
 			targetProxy = 6DC35CBF481851E8EB4387B674AB77F4 /* PBXContainerItemProxy */;
 		};
-		BFC70C8B7988FC3B452CED6ED9BA764B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GooglePlaces;
-			target = 0C1885900810601510E0C632060FAF26 /* GooglePlaces */;
-			targetProxy = ABB1B64419EBAFC770A8CA75C9588695 /* PBXContainerItemProxy */;
-		};
 		D42315111F400C0605ACCD6B5CAF2178 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GoogleMaps;
 			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
 			targetProxy = 6EB1C2DD30E6564FC3135C9E8002D8F7 /* PBXContainerItemProxy */;
 		};
+		D9EAA086B2B9133954359A8CAA20AE00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BSGridCollectionViewLayout;
+			target = 434AF40538EB4723A91D166A06871292 /* BSGridCollectionViewLayout */;
+			targetProxy = A4DA9292BD2B1FC79B499D2140C0F1FF /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		10199B27233A7CFEB3BD39F9923309A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6F94F4845021C84C6D624FB8FF0DBE3 /* BonsaiController.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BonsaiController/BonsaiController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BonsaiController/BonsaiController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BonsaiController/BonsaiController.modulemap";
+				PRODUCT_MODULE_NAME = BonsaiController;
+				PRODUCT_NAME = BonsaiController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		32C2FB3BD9A2402E2347CE50F405010A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -966,59 +1114,7 @@
 			};
 			name = Release;
 		};
-		4AE9FC8A852243DC9A2EFE9BA39BAC7B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81D611C5B0DCA9C31421221C14D89B37 /* GooglePlaces.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		5190C95E34059A778EAB56BE5C98CD7D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FFF84C11F76E01D9F1F66A162DDF8488 /* BSImageView.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BSImageView/BSImageView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BSImageView/BSImageView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/BSImageView/BSImageView.modulemap";
-				PRODUCT_MODULE_NAME = BSImageView;
-				PRODUCT_NAME = BSImageView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		51CB23C16945166F680B2910B7B2D10C /* Release */ = {
+		37B917E925FE1CEE2E3603AF4FC14606 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BE7737353E7602C4302C41FBEFC2F614 /* Pods-Triage.release.xcconfig */;
 			buildSettings = {
@@ -1057,9 +1153,61 @@
 			};
 			name = Release;
 		};
+		4AE9FC8A852243DC9A2EFE9BA39BAC7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CB622F726AFEC0FAD3A6F8D595C3FCF /* GooglePlaces.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5190C95E34059A778EAB56BE5C98CD7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AED685FA66D576A3CE935CC3A5E4939E /* BSImageView.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BSImageView/BSImageView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BSImageView/BSImageView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BSImageView/BSImageView.modulemap";
+				PRODUCT_MODULE_NAME = BSImageView;
+				PRODUCT_NAME = BSImageView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		5394A0D6B688BE900B77BD4F2F1CAF30 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45E722461181566B0DCD1E728CB06790 /* BSImagePicker.release.xcconfig */;
+			baseConfigurationReference = 7ABF53788C3A858BA1825AB0B29311C1 /* BSImagePicker.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BSImagePicker";
@@ -1076,7 +1224,7 @@
 		};
 		54EDE19F309A7B2C12EE942889CA855B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 655D36238183F59FADD0E6CC4003D005 /* BSImagePicker.debug.xcconfig */;
+			baseConfigurationReference = 9E3B58C55B018BFB6E2A3D9A1067F444 /* BSImagePicker.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1111,7 +1259,7 @@
 		};
 		573B04AB9E058A1911353A22A780E993 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0757FD79297208C9367BD5649571F226 /* GooglePlaces.release.xcconfig */;
+			baseConfigurationReference = F059B5087C4DE265A87385A68DA3315C /* GooglePlaces.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1128,7 +1276,7 @@
 		};
 		5C2784C92C9357EF655B4C88B18CF94F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 655D36238183F59FADD0E6CC4003D005 /* BSImagePicker.debug.xcconfig */;
+			baseConfigurationReference = 9E3B58C55B018BFB6E2A3D9A1067F444 /* BSImagePicker.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BSImagePicker";
@@ -1209,7 +1357,7 @@
 		};
 		750AD38793A8FCDC2AE4FA56600A1ECF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1ACAEE3BA0D0405D0089D2A491B94228 /* BSGridCollectionViewLayout.debug.xcconfig */;
+			baseConfigurationReference = 317E923F4D93B5D36252609561CE7442 /* BSGridCollectionViewLayout.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1244,7 +1392,7 @@
 		};
 		865B1D92CF59B05360B726110373C144 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 223C1E0A1E45EAB79EE0926F9EE07AC0 /* BSImageView.debug.xcconfig */;
+			baseConfigurationReference = FA3274679016DAE786FD211849484D45 /* BSImageView.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1279,7 +1427,7 @@
 		};
 		8CE5BA3EF4F6FABF028CE30772ECDA11 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 521A63C89B9ED2E16EAC2596F14A3496 /* GoogleMaps.release.xcconfig */;
+			baseConfigurationReference = E7485F9F9936720D57C0A811DED0E35A /* GoogleMaps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1296,7 +1444,7 @@
 		};
 		B7BAF32B9C4B4D677BD5373B89D5B967 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45E722461181566B0DCD1E728CB06790 /* BSImagePicker.release.xcconfig */;
+			baseConfigurationReference = 7ABF53788C3A858BA1825AB0B29311C1 /* BSImagePicker.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1330,7 +1478,95 @@
 			};
 			name = Release;
 		};
-		D0E4F3E4E66D23B73D5A8C0292FD187A /* Debug */ = {
+		BAE32A248216A7B04B1267B424A41D10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 201EFCA1C33748B28001EEBA797ED62C /* BonsaiController.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BonsaiController/BonsaiController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BonsaiController/BonsaiController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BonsaiController/BonsaiController.modulemap";
+				PRODUCT_MODULE_NAME = BonsaiController;
+				PRODUCT_NAME = BonsaiController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E1E452060D51DF935547186CE54B26CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0303E27DFE6986F633877312A1C943CD /* GoogleMaps.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA056A69EC86A0A64520265063699308 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94F1DF7184988BC42DA8DE087924401F /* BSGridCollectionViewLayout.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BSGridCollectionViewLayout/BSGridCollectionViewLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BSGridCollectionViewLayout/BSGridCollectionViewLayout-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BSGridCollectionViewLayout/BSGridCollectionViewLayout.modulemap";
+				PRODUCT_MODULE_NAME = BSGridCollectionViewLayout;
+				PRODUCT_NAME = BSGridCollectionViewLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F9B8E0B2D0331573C69D968EEFF0541A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ABB998B6285F3FC9DDEB3D6E7ECBF6CB /* Pods-Triage.debug.xcconfig */;
 			buildSettings = {
@@ -1367,58 +1603,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		E1E452060D51DF935547186CE54B26CC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B3786122E797F70ED6FA8BDEBB13353 /* GoogleMaps.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		EA056A69EC86A0A64520265063699308 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 987D57548C9E816816CB56CA1BBD3051 /* BSGridCollectionViewLayout.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BSGridCollectionViewLayout/BSGridCollectionViewLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BSGridCollectionViewLayout/BSGridCollectionViewLayout-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/BSGridCollectionViewLayout/BSGridCollectionViewLayout.modulemap";
-				PRODUCT_MODULE_NAME = BSGridCollectionViewLayout;
-				PRODUCT_NAME = BSGridCollectionViewLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1459,11 +1643,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4373DC8937C76E4651F368BD62EB5B1D /* Build configuration list for PBXNativeTarget "Pods-Triage" */ = {
+		439B023EB0FA3E4012D3B860EEFD211C /* Build configuration list for PBXNativeTarget "BonsaiController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0E4F3E4E66D23B73D5A8C0292FD187A /* Debug */,
-				51CB23C16945166F680B2910B7B2D10C /* Release */,
+				10199B27233A7CFEB3BD39F9923309A4 /* Debug */,
+				BAE32A248216A7B04B1267B424A41D10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1491,6 +1675,15 @@
 			buildConfigurations = (
 				865B1D92CF59B05360B726110373C144 /* Debug */,
 				5190C95E34059A778EAB56BE5C98CD7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4924DA3C5775CBAF4329941533E2409 /* Build configuration list for PBXNativeTarget "Pods-Triage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9B8E0B2D0331573C69D968EEFF0541A /* Debug */,
+				37B917E925FE1CEE2E3603AF4FC14606 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

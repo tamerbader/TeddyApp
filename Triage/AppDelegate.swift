@@ -18,7 +18,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         GMSPlacesClient.provideAPIKey("AIzaSyAXfs1Jb1x2ooC5DgGFUDAIb2sxsRIMZZU")
-        // Override point for customization after application launch.
+        
+        // Check Authentication
+        let defaults = UserDefaults.standard
+        if (defaults.string(forKey: "jwt") != nil) {
+            let mainStoryboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let initialViewControlleripad : UIViewController = mainStoryboard.instantiateViewController(withIdentifier: "trackingVC") as! TrackingStatusVC
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window?.rootViewController = initialViewControlleripad
+            self.window?.makeKeyAndVisible()
+            
+        }
         return true
     }
 
@@ -42,6 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        
     }
 
 

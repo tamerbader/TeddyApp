@@ -12,11 +12,16 @@ import MapKit
 class MapRadiusVC: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var radiusSlider: UISlider!
-    @IBOutlet weak var radiusLabel: UILabel!
+    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var progressBar: UIProgressView!
     
+    // Child Information From Prev VC
+    var childId: String!
+    var dropoff: DropoffBuilder!
+    
+    // Map Setup
     var coordinates: CLLocationCoordinate2D!
-    var mapRadius: Float = 200
-    
+    var mapRadius: Float = 300
     var overlays: [MKOverlay] = []
     
     override func viewDidLoad() {
@@ -29,32 +34,33 @@ class MapRadiusVC: UIViewController {
         setupMapview()
         
         // Setup Geofencing
-        addGeofencingCircle(radius: mapRadius)
+        addGeofencingCircle(radius: Float(mapRadius))
         
     }
     
     @IBAction func radiusSliderValueChanged(_ sender: UISlider) {
-        let currentRadiusValue: Int = Int(sender.value)
-        radiusLabel.text = "Radius: \(currentRadiusValue)m"
-        addGeofencingCircle(radius: Float(currentRadiusValue))
+        print("Slider value: \(sender.value)")
+        mapRadius = sender.value
+        addGeofencingCircle(radius: mapRadius)
     }
     
     func setupVC() {
         // MapView Delegate
         self.mapView.delegate = self
-        self.radiusSlider.setValue(mapRadius, animated: true)
-        self.radiusLabel.text = "Radius: \(mapRadius)m"
+        self.radiusSlider.setValue(Float(mapRadius), animated: true)
+        self.nextButton.layer.cornerRadius = 10
+        
     }
     
     
     func setupMapview() {
         
-        guard let location = coordinates else {
+        guard let location = dropoff.location else {
             return
         }
         
         // Draws the Map
-        let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+        let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
         let region = MKCoordinateRegion(center: location, span: span)
         mapView.setRegion(region, animated: true)
         
@@ -70,14 +76,33 @@ class MapRadiusVC: UIViewController {
         let circle: MKCircle = MKCircle(center: location, radius: Double(radius))
         
         DispatchQueue.main.async {
-            self.mapView.addOverlay(circle)
-            self.mapView.removeOverlays(self.overlays)
-            self.overlays.append(circle)
+            UIView.animate(withDuration: 1, animations: {
+                self.mapView.addOverlay(circle)
+                self.mapView.removeOverlays(self.overlays)
+                self.overlays.append(circle)
+            })
+            
         }
         
 
     }
     
+    @IBAction func didTapNext(_ sender: UIButton) {
+        dropoff.radius = Double(mapRadius)
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "goToDropoffTimes", sender: nil)
+        }
+        
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "goToDropoffTimes") {
+            let destVC: AddChildDropoffTimeVC = segue.destination as! AddChildDropoffTimeVC
+            destVC.dropoff = dropoff
+            destVC.childId = childId
+        }
+    }
 }
 
 extension MapRadiusVC: MKMapViewDelegate {
