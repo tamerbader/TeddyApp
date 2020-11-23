@@ -20,12 +20,11 @@ DEPENDENCIES:
   - GooglePlaces
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
+    - BonsaiController
     - BSGridCollectionViewLayout
     - BSImagePicker
     - BSImageView
-  trunk:
-    - BonsaiController
     - GoogleMaps
     - GooglePlaces
 
@@ -37,6 +36,6 @@ SPEC CHECKSUMS:
   GoogleMaps: 55da829c68aa931f3ae982b9e341cc2f3d89c587
   GooglePlaces: a62077320f9d64239245af63aa1aa136393ebeb6
 
-PODFILE CHECKSUM: 52b917696235c649201ca536e5e402820e91b5ab
+PODFILE CHECKSUM: 380f9d0828274a87cabad2db79d12b72e327b663
 
-COCOAPODS: 1.9.0.beta.2
+COCOAPODS: 1.9.3
