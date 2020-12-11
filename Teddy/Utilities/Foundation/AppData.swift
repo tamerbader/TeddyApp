@@ -55,4 +55,13 @@ class AppData {
         
         return nil
     }
+    
+    func resetData() {
+        self.caretakers = []
+        self.children = []
+        self.currentLocation = nil
+        self.currentUser = Caretaker()
+        self.currentUserJWT = ""
+        self.currentFlow = nil
+    }
 }

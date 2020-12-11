@@ -11,6 +11,9 @@
 		0C088DC0244B95E300B683B5 /* ApplicationProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C088DBF244B95E300B683B5 /* ApplicationProperties.swift */; };
 		0C0C4374245E2EB200BC5499 /* PushNotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0C4373245E2EB200BC5499 /* PushNotificationVC.swift */; };
 		0C0C4376245E407400BC5499 /* LocationServicesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0C4375245E407400BC5499 /* LocationServicesVC.swift */; };
+		0C0CB549257D905E0043F41D /* SettingsFamilyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0CB548257D905E0043F41D /* SettingsFamilyCell.swift */; };
+		0C0CB54C257D90A00043F41D /* SettingsLogoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0CB54B257D90A00043F41D /* SettingsLogoutCell.swift */; };
+		0C0CB54F257D91CC0043F41D /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0CB54E257D91CC0043F41D /* SettingsVC.swift */; };
 		0C1087B825360BEC00ADC958 /* APIAddDropoffRequest-DropoffRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1087B725360BEC00ADC958 /* APIAddDropoffRequest-DropoffRequest.swift */; };
 		0C1087BC25360C7400ADC958 /* APIAddDropoffRequest-APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1087BB25360C7400ADC958 /* APIAddDropoffRequest-APIEndpoint.swift */; };
 		0C1087C0253658F900ADC958 /* APIUpdateLocationRequest-UpdateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1087BF253658F900ADC958 /* APIUpdateLocationRequest-UpdateRequest.swift */; };
@@ -19,7 +22,6 @@
 		0C3002CD233FBFAB0093B176 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C3002CB233FBFAB0093B176 /* Main.storyboard */; };
 		0C3002CF233FBFAD0093B176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C3002CE233FBFAD0093B176 /* Assets.xcassets */; };
 		0C3002D2233FBFAD0093B176 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C3002D0233FBFAD0093B176 /* LaunchScreen.storyboard */; };
-		0C30F38C23EF0B7C00BC18BC /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C30F38B23EF0B7C00BC18BC /* HomeVC.swift */; };
 		0C32B1C7250BB5A100EA1998 /* StringHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C32B1C6250BB5A100EA1998 /* StringHelpers.swift */; };
 		0C35A67324E08BE7004AC7D1 /* AddChildDropoffTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C35A67224E08BE7004AC7D1 /* AddChildDropoffTimeVC.swift */; };
 		0C35A67524E09D40004AC7D1 /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C35A67424E09D40004AC7D1 /* DayCell.swift */; };
@@ -110,6 +112,9 @@
 		0C088DBF244B95E300B683B5 /* ApplicationProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationProperties.swift; sourceTree = "<group>"; };
 		0C0C4373245E2EB200BC5499 /* PushNotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationVC.swift; sourceTree = "<group>"; };
 		0C0C4375245E407400BC5499 /* LocationServicesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServicesVC.swift; sourceTree = "<group>"; };
+		0C0CB548257D905E0043F41D /* SettingsFamilyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFamilyCell.swift; sourceTree = "<group>"; };
+		0C0CB54B257D90A00043F41D /* SettingsLogoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLogoutCell.swift; sourceTree = "<group>"; };
+		0C0CB54E257D91CC0043F41D /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		0C1087B725360BEC00ADC958 /* APIAddDropoffRequest-DropoffRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIAddDropoffRequest-DropoffRequest.swift"; sourceTree = "<group>"; };
 		0C1087BB25360C7400ADC958 /* APIAddDropoffRequest-APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIAddDropoffRequest-APIEndpoint.swift"; sourceTree = "<group>"; };
 		0C1087BF253658F900ADC958 /* APIUpdateLocationRequest-UpdateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIUpdateLocationRequest-UpdateRequest.swift"; sourceTree = "<group>"; };
@@ -121,7 +126,6 @@
 		0C3002CE233FBFAD0093B176 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C3002D1233FBFAD0093B176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C3002D3233FBFAD0093B176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C30F38B23EF0B7C00BC18BC /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		0C32B1C6250BB5A100EA1998 /* StringHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHelpers.swift; sourceTree = "<group>"; };
 		0C35A67224E08BE7004AC7D1 /* AddChildDropoffTimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChildDropoffTimeVC.swift; sourceTree = "<group>"; };
 		0C35A67424E09D40004AC7D1 /* DayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
@@ -345,6 +349,8 @@
 				0C35A67424E09D40004AC7D1 /* DayCell.swift */,
 				0CDF3085250FF7F600EB1A35 /* TrackingStatusCell.swift */,
 				0C6B2F722558DC3E001651AC /* DropoffLocationNameCell.swift */,
+				0C0CB548257D905E0043F41D /* SettingsFamilyCell.swift */,
+				0C0CB54B257D90A00043F41D /* SettingsLogoutCell.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -378,7 +384,6 @@
 			children = (
 				0C4EAD1B2509BFD300621BE1 /* SignupInfo VC */,
 				0CAF018D2455CE88007BF4B0 /* SignupVC.swift */,
-				0C30F38B23EF0B7C00BC18BC /* HomeVC.swift */,
 				0CC2BB7724140111001537FF /* MapRadiusVC.swift */,
 				0C70A3F824439BD60046B8BB /* TrackingStatusVC.swift */,
 				0C0C4373245E2EB200BC5499 /* PushNotificationVC.swift */,
@@ -392,6 +397,7 @@
 				0CD7F68C2540FB0200434483 /* LocationPermissionVC.swift */,
 				0C99DD132549F239001FFF84 /* AddChildLocationNicknameVC.swift */,
 				0C6B2F752558DEBE001651AC /* ChildDetailVC.swift */,
+				0C0CB54E257D91CC0043F41D /* SettingsVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -764,6 +770,7 @@
 				0C35A67524E09D40004AC7D1 /* DayCell.swift in Sources */,
 				0CC5F6CA24C5B35A00E74006 /* APIGetFamilyRequest-CaretakerResponse.swift in Sources */,
 				0C35A69424ED9DC0004AC7D1 /* APIConfirmDropoffRequest-Request.swift in Sources */,
+				0C0CB54C257D90A00043F41D /* SettingsLogoutCell.swift in Sources */,
 				0CAF01902455D72F007BF4B0 /* SignupInfoVC.swift in Sources */,
 				0CC5F6B424C4B09A00E74006 /* APIRequest-PostExtension.swift in Sources */,
 				0C35A68924E8627A004AC7D1 /* TrackingService.swift in Sources */,
@@ -789,6 +796,7 @@
 				0C6EF0FE2485A5920017FE65 /* MemberDecisionVC.swift in Sources */,
 				0CC5F6C824C5151500E74006 /* APIGetFamilyRequest-APIEndpoint.swift in Sources */,
 				0CAF018E2455CE88007BF4B0 /* SignupVC.swift in Sources */,
+				0C0CB549257D905E0043F41D /* SettingsFamilyCell.swift in Sources */,
 				0CC5F6B824C4B3F500E74006 /* APIRequest-ProcessResponse.swift in Sources */,
 				0C6B2F70255712C3001651AC /* APIRegisterPushDevice-APIEndpoint.swift in Sources */,
 				0CAF01932455EBD2007BF4B0 /* User.swift in Sources */,
@@ -796,7 +804,6 @@
 				0C52C32C24FDFC1C00C02C04 /* APILoginRequest-APIEndpoint.swift in Sources */,
 				0CB33879248D272F006628B4 /* AddChildInfoVC.swift in Sources */,
 				0CC5F6B624C4B1C200E74006 /* APIRequest-UrlRequestHelper.swift in Sources */,
-				0C30F38C23EF0B7C00BC18BC /* HomeVC.swift in Sources */,
 				0C4CFE1F252E3120006D81A2 /* APICheckFamilyIDRequest-Request.swift in Sources */,
 				0C99DD142549F239001FFF84 /* AddChildLocationNicknameVC.swift in Sources */,
 				0CC5F6CC24C5B3C000E74006 /* APIGetFamilyRequest-ChildResponse.swift in Sources */,
@@ -812,6 +819,7 @@
 				0C32B1C7250BB5A100EA1998 /* StringHelpers.swift in Sources */,
 				0C430B78240C09310072F898 /* LocationServices.swift in Sources */,
 				0C1087C0253658F900ADC958 /* APIUpdateLocationRequest-UpdateRequest.swift in Sources */,
+				0C0CB54F257D91CC0043F41D /* SettingsVC.swift in Sources */,
 				0C6EF0FA248421240017FE65 /* AddFamilyCell.swift in Sources */,
 				0CD7F68D2540FB0200434483 /* LocationPermissionVC.swift in Sources */,
 				0C6B2F762558DEBE001651AC /* ChildDetailVC.swift in Sources */,
@@ -974,6 +982,7 @@
 				CODE_SIGN_ENTITLEMENTS = Teddy/Teddy.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = YGAC5TVUFN;
 				INFOPLIST_FILE = "$(SRCROOT)/Teddy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -998,6 +1007,7 @@
 				CODE_SIGN_ENTITLEMENTS = Teddy/Teddy.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = YGAC5TVUFN;
 				INFOPLIST_FILE = "$(SRCROOT)/Teddy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

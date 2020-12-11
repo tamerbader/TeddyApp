@@ -17,6 +17,8 @@ class AddChildDropoffTimeVC: UIViewController {
     @IBOutlet weak var addTimeButton: UIButton!
     @IBOutlet var addButtonBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var progressBar: UIProgressView!
+    @IBOutlet weak var navigationBarTitle: UILabel!
+    @IBOutlet weak var dividerView: UIView!
     
     // Current Flow
     var flow: DropoffTimeFlow!
@@ -29,6 +31,7 @@ class AddChildDropoffTimeVC: UIViewController {
     var dropoffId: String?
     var cronTimes: [String]?
     var selectedDropoffTime: DropoffTime?
+    var dropoffNickname: String?
     
     // Dropoff Times
     var dropoffTimes: [DropoffTime] = []
@@ -77,6 +80,8 @@ class AddChildDropoffTimeVC: UIViewController {
                             })
                             
                             self.navigationController?.popToRootViewController(animated: true)
+                            self.delegate?.shouldRefreshData()
+
                         }
                     }
                     
@@ -105,7 +110,9 @@ class AddChildDropoffTimeVC: UIViewController {
                             self.navigationController?.dismiss(animated: true, completion: {
                                 
                             })
-                            self.navigationController?.popViewController(animated: true)
+                            self.delegate?.shouldRefreshData()
+                            self.navigationController?.popToRootViewController(animated: true)
+
                         }
                     }
                 }, onFailure: { (error, err) in
@@ -120,13 +127,25 @@ class AddChildDropoffTimeVC: UIViewController {
         
     }
     
+    @IBAction func didTapBack(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+        delegate?.shouldRefreshData()
+    }
+    
     func setupVC() {
         
         switch flow! {
             case .ADDING:
                 self.addTimeButton.setTitle("Next", for: .normal)
+                self.navigationBarTitle.text = "Add a Child"
+                self.progressBar.isHidden = false
+                self.dividerView.isHidden = true
             case .EDITING:
                 self.addTimeButton.setTitle("Save", for: .normal)
+                self.navigationBarTitle.text = "Edit Drop-off Times"
+                self.headerLabel.text = "\(dropoffNickname!) Drop-off Times"
+                self.progressBar.isHidden = true
+                self.dividerView.isHidden = false
                 guard let times: [String] = cronTimes else {return}
                 dropoffTimes = DropoffTime.createFromCronTimes(cronTimes: times)
         }

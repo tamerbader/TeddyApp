@@ -40,6 +40,9 @@ class ChildDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Setup VC
+        setupVC()
+        
         // Setup Table View
         setupTableView()
         
@@ -52,6 +55,7 @@ class ChildDetailVC: UIViewController {
         if (segue.identifier == "editDropoffTimes") {
             let destVC: AddChildDropoffTimeVC = segue.destination as! AddChildDropoffTimeVC
             destVC.flow = .EDITING
+            destVC.dropoffNickname = selectedDropoff?.nickname
             destVC.cronTimes = selectedDropoff?.times
             destVC.dropoffId = selectedDropoff?._id
             destVC.delegate = self.delegate
@@ -63,6 +67,10 @@ class ChildDetailVC: UIViewController {
             destVC.delegate = self.delegate
             
         }
+    }
+    
+    func setupVC() {
+        self.navigationBarTitleLabel.text = "\(child.fullName!) Drop-offs"
     }
     
     func setupTableView() {
@@ -84,7 +92,7 @@ class ChildDetailVC: UIViewController {
         var mapCenterPoint = CLLocationCoordinate2D()
         let currentLocation = AppData.shared.currentLocation
         if (currentLocation == nil) {
-            guard let firstDropoffLocation: Dropoff = child.dropoffs[0] else { return }
+            let firstDropoffLocation: Dropoff = child.dropoffs[0]
             mapCenterPoint = CLLocationCoordinate2D(latitude: Double(firstDropoffLocation.latitude)!, longitude: Double(firstDropoffLocation.longitude)!)
             
         } else {
@@ -111,6 +119,12 @@ class ChildDetailVC: UIViewController {
     }
     @IBAction func didTapAddLocation(_ sender: UIButton) {
         self.performSegue(withIdentifier: "addDropoffLocation", sender: nil)
+    }
+    
+    @IBAction func didTapBack(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+        delegate?.shouldRefreshData()
+
     }
     
 }

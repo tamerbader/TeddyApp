@@ -13,6 +13,7 @@ class PushNotificationVC: UIViewController {
     @IBOutlet weak var notificationImageView: UIImageView!
     @IBOutlet weak var enableSuperView: UIView!
     @IBOutlet weak var skipSuperView: UIView!
+    var flow: PushNotificationFlow!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -43,10 +44,24 @@ class PushNotificationVC: UIViewController {
             print("Permission granted: \(granted)") // 3
             DispatchQueue.main.async {
                 UIApplication.shared.registerForRemoteNotifications()
-                self.performSegue(withIdentifier: "goToLocation", sender: nil)
+                
+                // Route to next screen depending on flow
+                switch self.flow! {
+                case .SIGNUP:
+                    self.performSegue(withIdentifier: "goToLocation", sender: nil)
+                case .HOME:
+                    self.navigationController?.popViewController(animated: true)
+                }
 
             }
       }
         
     }
 }
+
+enum PushNotificationFlow {
+    case SIGNUP
+    case HOME
+}
+
+

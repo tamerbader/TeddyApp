@@ -34,10 +34,12 @@ class TrackingStatusVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         setupView()
-        
         reloadData()
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -51,6 +53,11 @@ class TrackingStatusVC: UIViewController {
             let destVC: ChildDetailVC = segue.destination as! ChildDetailVC
             destVC.child = selectedChild
             destVC.delegate = self
+        }
+        
+        if (segue.identifier == "goToPushNotification") {
+            let destVC: PushNotificationVC = segue.destination as! PushNotificationVC
+            destVC.flow = .HOME
         }
     }
     
@@ -100,7 +107,6 @@ class TrackingStatusVC: UIViewController {
         
         // Start Tracking All Children
         for child in AppData.shared.children {
-            TrackingService.shared.startTracking(withChild: child, withDelegate: self)
         }
     }
     
@@ -115,6 +121,11 @@ class TrackingStatusVC: UIViewController {
         // Check to see if there's atleast 1 kid registered. If not then show an empty screen saying add child.
         if (!(AppData.shared.children.count > 0)) {
             // Present an empty screen informing user to add
+            isTrackingEnabled = false
+        }
+        
+        if (!UIApplication.shared.isRegisteredForRemoteNotifications) {
+            isTrackingEnabled = false
         }
         
         if (isTrackingEnabled) {
@@ -126,6 +137,52 @@ class TrackingStatusVC: UIViewController {
     }
     
     @IBAction func didTapStatusBar(_ sender: UIButton) {
+        if (!LocationService.shared.isAlwaysAuthorized()) {
+            // Present an alert regarding updating location settings
+            let locationServiceAlertController = UIAlertController(title: "Location Services Alert", message: "The application needs 'Always Authorized' permission to function properly. Please tap 'Fix' to continue", preferredStyle: .alert)
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction) in
+                print("Cancel")
+            })
+            let fixAction = UIAlertAction(title: "Fix", style: .default, handler: { (action: UIAlertAction) in
+                print("Going to fix")
+                self.performSegue(withIdentifier: "goToLocationPermission", sender: nil)
+            })
+            
+            locationServiceAlertController.addAction(cancelAction)
+            locationServiceAlertController.addAction(fixAction)
+            locationServiceAlertController.preferredAction = fixAction
+            self.present(locationServiceAlertController, animated: true, completion: nil)
+            return
+        }
+        
+        if (!(AppData.shared.children.count > 0)) {
+            let childrenAlertController = UIAlertController(title: "No Children Added", message: "Please add atleast 1 child in order for the app to begin working", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            childrenAlertController.addAction(okAction)
+            self.present(childrenAlertController, animated: true, completion: nil)
+            return
+
+        }
+        
+        if (!UIApplication.shared.isRegisteredForRemoteNotifications) {
+            // Create alert asking user to fix notification settings
+            let notificationAlertController = UIAlertController(title: "Notification Service Alert", message: "The application will need push notification permissions in order to alert you. Please tap 'Fix' to continue", preferredStyle: .alert)
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+                print("Cancel")
+            }
+            
+            let fixAction = UIAlertAction(title: "Fix", style: .default) { (action) in
+                self.performSegue(withIdentifier: "goToPushNotification", sender: nil)
+            }
+            
+            notificationAlertController.addAction(cancelAction)
+            notificationAlertController.addAction(fixAction)
+            notificationAlertController.preferredAction = fixAction
+            
+            self.present(notificationAlertController, animated: true, completion: nil)
+        }
     }
     
     
@@ -159,6 +216,10 @@ class TrackingStatusVC: UIViewController {
         
         isShowingButtonMenu = false
         hideAddMemberSelections()
+    }
+    
+    @IBAction func didTapSettings(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "goToSettings", sender: nil)
     }
     
     func setupView() {
@@ -251,67 +312,6 @@ enum TRACKING_STATUS {
     case ENABLED
     case DISABLED
 }
-
-extension TrackingStatusVC: ControllerUpdateDelegate {
-    func didExitRegion(withChild child: Child) {
-       /* let alert = UIAlertController(title: "Region Monitoring", message: "\(child.fullName!) has left region", preferredStyle: .alert)
-
-        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
-        self.present(alert, animated: true)*/
-    }
-    
-    func didDropoff(withChild child: Child) {
-       /* let alert = UIAlertController(title: "Dropped Off", message: "Successfully Dropped off \(child.fullName!)", preferredStyle: .alert)
-
-        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
-        self.present(alert, animated: true)*/
-        
-        //get the notification center
-  /*      let center =  UNUserNotificationCenter.current()
-
-        //create the content for the notification
-        let content = UNMutableNotificationContent()
-        content.title = "Teddy Bear"
-        content.subtitle = "Dropoff Notification"
-        content.body = "\(child.fullName!) has been dropped off!"
-        content.sound = UNNotificationSound.default
-
-        //notification trigger can be based on time, calendar or location
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval:1, repeats: false)
-
-        //create request to display
-        let request = UNNotificationRequest(identifier: "\(child.fullName!)", content: content, trigger: trigger)
-
-        //add request to notification center
-        center.add(request) { (error) in
-            if error != nil {
-                print("error \(String(describing: error))")
-            }
-        }*/
-    }
-    
-    func didStartTracking(withChild child: Child) {
-        
-        /*
-        let alert = UIAlertController(title: "Started Tracking", message: "Started Tracking \(child.fullName!)", preferredStyle: .alert)
-
-        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
-        self.present(alert, animated: true)*/
-        
-    }
-    
-    func didEnterRegion(withChild child: Child) {
-     /*   let alert = UIAlertController(title: "Region Monitoring", message: "\(child.fullName!) entered the region", preferredStyle: .alert)
-
-        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
-        self.present(alert, animated: true) */
-    }
-    
-  
-    
-    
-}
-
 extension TrackingStatusVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (AppData.shared.children.count)

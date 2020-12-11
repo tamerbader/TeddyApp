@@ -47,7 +47,7 @@ class SignupInfoVC: UIViewController {
         let style = NSMutableParagraphStyle()
         style.lineSpacing = 10
         let attributes = [NSAttributedString.Key.paragraphStyle : style, NSAttributedString.Key.font: UIFont(fontStyle: .AspiraMedium, size: 17)]
-        passwordHints.attributedText = NSAttributedString(string: "❌ Uppercase Letters\n✅ Uppercase Letters\n✅ Uppercase Letters", attributes:attributes)
+        passwordHints.attributedText = NSAttributedString(string: "❌ Uppercase Letters\n✅ Uppercase Letters\n✅ Uppercase Letters", attributes:attributes as [NSAttributedString.Key : Any])
         
         enableHints(value: false)
         

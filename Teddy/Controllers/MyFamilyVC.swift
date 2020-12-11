@@ -45,39 +45,17 @@ class MyFamilyVC: UIViewController {
                 print(errorResponse ?? "error response")
                 print(error)
             })
-        
-        
-        /*
-        APIGetUserRequest().dispatch(
-            onSuccess: { (successResponse) in
-                Caretaker.refreshDataFromResponse(guardianResponse: successResponse)
-                // Add Family to Array
-                self.familyInfo.append(AppData.shared.currentUser)
-                for child in AppData.shared.currentUser.children {
-                    self.familyInfo.append(child)
-                }
-                for guardian in AppData.shared.guardians {
-                    self.familyInfo.append(guardian)
-                    for child in guardian.children {
-                        self.familyInfo.append(child)
-                    }
-                }
-                DispatchQueue.main.async {
-                    self.familyMembersTableVIew.reloadData()
-                }
-                
-        },
-            onFailure: { (errorResponse, error) in
-                print("I'm scared. I dont have a guardian :(")
-                print(errorResponse)
-                print(error)
-                
-        })
-        */
     }
     
     @IBAction func didTapNext(_ sender: UIButton) {
         self.performSegue(withIdentifier: "goToPush", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "goToPush") {
+            let destVC: PushNotificationVC = segue.destination as! PushNotificationVC
+            destVC.flow = .SIGNUP
+        }
     }
     
 }

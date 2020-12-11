@@ -50,6 +50,11 @@ class MapRadiusVC: UIViewController {
         mapRadius = sender.value
         addGeofencingCircle(radius: mapRadius)
     }
+    @IBAction func didTapBack(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+        delegate?.shouldRefreshData()
+
+    }
     
     func setupVC() {
         // MapView Delegate

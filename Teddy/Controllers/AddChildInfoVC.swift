@@ -125,6 +125,7 @@ class AddChildInfoVC: UIViewController {
         hideSpinner()
         let destVC: AddChildLocationNicknameVC = segue.destination as! AddChildLocationNicknameVC
         destVC.childId = self.childId
+        destVC.delegate = self.delegate
     }
 }
 

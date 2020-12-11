@@ -14,10 +14,6 @@ class SignupVC: UIViewController {
     @IBOutlet weak var appMottoLabel: UILabel!
     @IBOutlet weak var familyImageView: UIImageView!
     
-    // Sign up with Google
-    @IBOutlet weak var googleSignupSuperView: UIView!
-    @IBOutlet weak var googleIconCard: UIView!
-    
     // Sign Up With Email
     @IBOutlet weak var emailSignupSuperView: UIView!
     @IBOutlet weak var emailIconCard: UIView!
@@ -32,15 +28,11 @@ class SignupVC: UIViewController {
     }
     
     func setupView() {
-        googleSignupSuperView.layer.cornerRadius = 10
-        googleIconCard.layer.cornerRadius = 7
         emailSignupSuperView.layer.cornerRadius = 10
         emailIconCard.layer.cornerRadius = 7
         
     }
-    @IBAction func didTapGoogleSignUp(_ sender: UIButton) {
-        print("Signing up with google")
-    }
+    
     @IBAction func didTapEmailSignup(_ sender: UIButton) {
         print("Signing up with email")
         desiredAuthFlow = .SIGNUP
@@ -58,14 +50,5 @@ class SignupVC: UIViewController {
         }
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

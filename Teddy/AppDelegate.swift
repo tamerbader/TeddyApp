@@ -16,10 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-       
-        GMSPlacesClient.provideAPIKey("AIzaSyAXfs1Jb1x2ooC5DgGFUDAIb2sxsRIMZZU")
         
-       
         // Check Authentication
         let defaults = UserDefaults.standard
         if (defaults.string(forKey: "jwt") != nil) {

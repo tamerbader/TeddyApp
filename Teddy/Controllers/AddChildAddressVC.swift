@@ -92,6 +92,11 @@ class AddChildAddressVC: UIViewController {
             })
         }
     }
+    @IBAction func didTapBack(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+        delegate?.shouldRefreshData()
+
+    }
     
     func setupView() {
         // Setup View
